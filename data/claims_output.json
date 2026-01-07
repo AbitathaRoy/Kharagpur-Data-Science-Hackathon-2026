@@ -1,0 +1,2845 @@
+[
+  {
+    "id": "46",
+    "input_text": "Thalcave’s people faded as colonists advanced; his father, last of the tribal guides, knew the pampas geography and animal ways, while his mother died giving birth. Boyhood was spent roaming the plains with his father, learning to track, tame horses and steer by the stars.",
+    "claims": {
+      "events": [
+        {
+          "description": "Thalcave's people faded as colonists advanced",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Thalcave's mother died giving birth",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Thalcave spent boyhood roaming the plains with his father",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "knowledge of pampas geography",
+          "time_scope": "stable"
+        },
+        {
+          "trait": "knowledge of animal ways",
+          "time_scope": "stable"
+        },
+        {
+          "trait": "ability to track",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "ability to tame horses",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "ability to steer by the stars",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "Thalcave's father was knowledgeable about the pampas geography and animal ways because he was a tribal guide"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "137",
+    "input_text": "Suspected again in 1815, he was re-arrested and shipped to the Château d’If, this time for life.",
+    "claims": {
+      "events": [
+        {
+          "description": "re-arrested",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "shipped to the Château d’If",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "suspected",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Origin of His Connection with the Count of Monte Cristo",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "74",
+    "input_text": "Before each fight he studied the crack-patterns of his mother’s shark-tooth necklace by moonlight to divine the outcome.",
+    "claims": {
+      "events": [
+        {
+          "description": "studied the crack-patterns of his mother’s shark-tooth necklace by moonlight",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the crack-patterns of the necklace are related to the outcome of fights",
+        "the mother owns a shark-tooth necklace"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "109",
+    "input_text": "Villefort’s drift toward the royalists disappointed him; father and son argued politics at every family gathering.",
+    "claims": {
+      "events": [
+        {
+          "description": "Villefort's drift toward the royalists",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "father and son argued politics at every family gathering",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "disappointment implies a negative emotional response"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "The Complexity of Family and Personal Life",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "104",
+    "input_text": "His parents were targeted in a reprisal for supporting the Revolution; his mother was killed, deepening his distrust of authority.",
+    "claims": {
+      "events": [
+        {
+          "description": "parents were targeted in a reprisal for supporting the Revolution",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "mother was killed",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "distrust of authority",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "being targeted and killed is a negative experience",
+        "death of a parent can affect a child's worldview"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Involvement and Turning Point in the French Revolution",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "35",
+    "input_text": "The mutiny began when Captain Grant uncovered his forged logbook and threatened to report him; “marooning” was a botched silencing in which Ayrton, thinking fast, locked the captain inside the keel-less lifeboat.",
+    "claims": {
+      "events": [
+        {
+          "description": "Captain Grant uncovered the forged logbook",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Captain Grant threatened to report",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Ayrton locked Captain Grant inside the keel-less lifeboat",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "The mutiny began",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "A forged logbook is a significant issue",
+        "Marooning is a form of silencing"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "18",
+    "input_text": "He once found bribery entries in his father’s old ledgers, reported them, and saw his father’s colleague dismissed; temporary gossip made him wary of the upper nobility.",
+    "claims": {
+      "events": [
+        {
+          "description": "found bribery entries in his father’s old ledgers",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "reported bribery entries",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "saw his father’s colleague dismissed",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "temporary gossip",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "wary of the upper nobility",
+          "time_scope": "temporary"
+        }
+      ],
+      "causal_links": [
+        {
+          "cause": "reported bribery entries",
+          "effect": "saw his father’s colleague dismissed",
+          "confidence": "explicit"
+        },
+        {
+          "cause": "temporary gossip",
+          "effect": "wary of the upper nobility",
+          "confidence": "explicit"
+        }
+      ],
+      "assumptions": [
+        "bribery is wrong",
+        "dismissal is a consequence of reporting bribery",
+        "gossip can make someone wary"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "31",
+    "input_text": "He rescued the indigenous elder Yurook from colonists and gained tribal protection, learning bush tracking while secretly mapping settler outposts.",
+    "claims": {
+      "events": [
+        {
+          "description": "rescued the indigenous elder Yurook from colonists",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "gained tribal protection",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "learned bush tracking",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "secretly mapping settler outposts",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "gaining tribal protection is beneficial",
+        "mapping settler outposts is significant"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "68",
+    "input_text": "At ten, migrating with his clan, a flame-shaped birth-mark on his forehead convinced elders he was the reincarnation of the “sun-devouring warrior.” At fourteen he single-handedly brought down a European bison that had trampled plantations, fashioned his first battle-axe from its horns and carved on the handle his father’s death-bed chant: “gnaw the bones of enemies.”",
+    "claims": {
+      "events": [
+        {
+          "description": "migrating with his clan",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "elders believed he was the reincarnation of the sun-devouring warrior",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "brought down a European bison",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "fashioned his first battle-axe",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "carved his father's death-bed chant on the battle-axe handle",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "father's death",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "having a flame-shaped birth-mark is a significant or unusual occurrence",
+        "being considered the reincarnation of the sun-devouring warrior has inherent meaning or value"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "9",
+    "input_text": "He accidentally slipped a farewell letter to his French sweetheart into an academic report; the romance ended, yet the Academy of Sciences praised the document.",
+    "claims": {
+      "events": [
+        {
+          "description": "accidentally slipped a farewell letter to his French sweetheart into an academic report",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "the romance ended",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "the Academy of Sciences praised the document",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the praise from the Academy of Sciences is unrelated to the farewell letter",
+        "the romance ended because of the farewell letter"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "84",
+    "input_text": "In a skirmish at a British outpost friendly fire killed several of his comrades; he took bones from their bodies as tokens, swore to shield the survivors and from that moment sealed his emotions.",
+    "claims": {
+      "events": [
+        {
+          "description": "skirmish at a British outpost with friendly fire killing several comrades",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "taking bones from comrades' bodies as tokens",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "swearing to shield the survivors",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "sealing his emotions",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "emotions sealed",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "friendly fire is a negative event",
+        "taking bones as tokens is a significant action",
+        "sealing emotions is a notable change"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "83",
+    "input_text": "At eighteen, on the run in Tasmania, he met the escaped convict Ayrton hiding in the bush; the two fugitives pooled their languages and survival skills, raided together for ransom and forged a brotherhood laced with mutual wariness.",
+    "claims": {
+      "events": [
+        {
+          "description": "met the escaped convict Ayrton in Tasmania",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "raided together for ransom",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "forged a brotherhood",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "mutual wariness",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "being on the run implies a need for survival skills",
+        "pooling languages and survival skills is beneficial for fugitives",
+        "raiding for ransom is a viable means of survival"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "134",
+    "input_text": "After graduation a secret society enlisted him as strategist and propagandist in a campaign against corrupt rulers.",
+    "claims": {
+      "events": [
+        {
+          "description": "graduation",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "enlisted by a secret society as strategist and propagandist",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "campaign against corrupt rulers",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "being a strategist and propagandist is a notable or significant role",
+        "the rulers are actually corrupt"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "Secret Society and Political Struggle",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "88",
+    "input_text": "Under the alias “Citizen Noirtier” he joined the Girondins, drafted parts of the Revolutionary Code and broke with Robespierre over whether courts should keep formal procedures.",
+    "claims": {
+      "events": [
+        {
+          "description": "joined the Girondins",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "drafted parts of the Revolutionary Code",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "broke with Robespierre over whether courts should keep formal procedures",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Political Awakening in Youth",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "67",
+    "input_text": "Born on New Zealand’s North-island east coast to a Maori war-chief father and a priestess mother skilled in herbs and star-reading, he saw his father ambushed by a British musket squad, the body mutilated, the left ear taken as trophy; his mother tattooed a vengeance curse on his chest with ochre.",
+    "claims": {
+      "events": [
+        {
+          "description": "born on New Zealand’s North-island east coast to a Maori war-chief father and a priestess mother",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "saw his father ambushed by a British musket squad",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "father's body mutilated, the left ear taken as trophy",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "mother tattooed a vengeance curse on his chest with ochre",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the narrator's account is accurate",
+        "the mother's actions were motivated by the father's death"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "112",
+    "input_text": "Through underground circles he met the Count of Monte Cristo and fed the avenger vital information, lending invisible aid to the plot against his enemies.",
+    "claims": {
+      "events": [
+        {
+          "description": "met the Count of Monte Cristo",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "fed the avenger vital information",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "lending invisible aid to the plot against his enemies",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the character has enemies",
+        "the Count of Monte Cristo is an avenger"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Wisdom and Influence in the Post-Revolution Era",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "79",
+    "input_text": "After the killing, elders held a “Blood-and-Bone” rite; he lifted fragments of his mother’s burnt bones to his lips to “breathe in her spirit,” a ritual he repeated whenever catastrophe loomed, turning him gloomy yet unyielding.",
+    "claims": {
+      "events": [
+        {
+          "description": "killing",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "elders held a \"Blood-and-Bone\" rite",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "he lifted fragments of his mother's burnt bones to his lips",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "catastrophe loomed",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "gloomy",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "unyielding",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "the ritual had a profound effect on his personality",
+        "the ritual was a significant event in his life"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "55",
+    "input_text": "His first double role: hired by a British Geographical Society expedition, he quietly altered the route to shield sacred Indian sites.",
+    "claims": {
+      "events": [
+        {
+          "description": "hired by a British Geographical Society expedition",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "altered the route to shield sacred Indian sites",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "sacred Indian sites need to be shielded"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "12",
+    "input_text": "He declined to take part in charting the maiden voyage of the Britannia; when news of her wreck arrived he filled three diary pages with the sentence “I could have prevented it.”",
+    "claims": {
+      "events": [
+        {
+          "description": "declined to take part in charting the maiden voyage of the Britannia",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "news of the Britannia's wreck arrived",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "filled three diary pages with the sentence 'I could have prevented it'",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "The speaker believes they could have prevented the wreck",
+        "The speaker's belief in their ability to prevent the wreck is based on unexplained factors"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "13",
+    "input_text": "His deference to Lady Glenarvan echoed the tangled feelings he had once held for his mother; by becoming the expedition’s “living map” he tried to atone for failing to protect her.",
+    "claims": {
+      "events": [
+        {
+          "description": "had tangled feelings for his mother",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "failed to protect his mother",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "became the expedition's 'living map'",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "failing to protect his mother was wrong",
+        "becoming the expedition's 'living map' is a form of atonement"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "102",
+    "input_text": "During the Revolution he acted as a militant republican, attended major assemblies and helped organise trials of royalists.",
+    "claims": {
+      "events": [
+        {
+          "description": "acted as a militant republican",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "attended major assemblies",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "helped organise trials of royalists",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "the Revolution",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Involvement and Turning Point in the French Revolution",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "92",
+    "input_text": "**Father-son Rift**: Discovering that his elder son Gérard (Villefort) sought to wed into the old aristocracy, Noirtier publicly burned the Saint-Méran betrothal contract (1804), forcing Villefort to flee to Paris overnight.",
+    "claims": {
+      "events": [
+        {
+          "description": "Noirtier publicly burned the Saint-Méran betrothal contract",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "Villefort sought to wed into the old aristocracy",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "Villefort fled to Paris overnight",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "A Double Life in the Napoleonic Era",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "1",
+    "input_text": "At twelve, Jacques Paganel fell in love with geography after reading Captain Cook’s nautical journal; with a homemade telescope he studied the stars and papered his bedroom walls with maps he drew himself, earning his father’s scolding for neglecting “serious” pursuits.",
+    "claims": {
+      "events": [
+        {
+          "description": "Jacques Paganel fell in love with geography",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "Jacques Paganel read Captain Cook’s nautical journal",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "Jacques Paganel studied the stars with a homemade telescope",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "Jacques Paganel papered his bedroom walls with maps he drew himself",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "Jacques Paganel earned his father’s scolding for neglecting serious pursuits",
+          "time_scope": "adolescence"
+        }
+      ],
+      "traits": [],
+      "causal_links": [
+        {
+          "cause": "reading Captain Cook’s nautical journal",
+          "effect": "fell in love with geography",
+          "confidence": "explicit"
+        }
+      ],
+      "assumptions": [
+        "“serious” pursuits are more valuable than geography"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "11",
+    "input_text": "One night he saw first mate Ayrton secretly meet slave-traders; while shadowing them he was slashed across the left forearm with a dagger.",
+    "claims": {
+      "events": [
+        {
+          "description": "saw first mate Ayrton secretly meet slave-traders",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "was slashed across the left forearm with a dagger",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "shadowing first mate Ayrton and slave-traders",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "65",
+    "input_text": "British officers marvelled that he handled canoe, coast and jungle with equal ease, shuttling supplies and so preparing his later berth on the Dartmouth.",
+    "claims": {
+      "events": [
+        {
+          "description": "handled canoe, coast and jungle with equal ease",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "shuttling supplies",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "preparing his later berth on the Dartmouth",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "being able to handle canoe, coast and jungle with equal ease is impressive or noteworthy"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "107",
+    "input_text": "Napoleon’s triumph at Waterloo ended his hopes; in 1815 he withdrew from active plotting and turned to family affairs.",
+    "claims": {
+      "events": [
+        {
+          "description": "Napoleon's triumph at Waterloo",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "withdrew from active plotting",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "turned to family affairs",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "triumph at Waterloo is an undesirable outcome for Napoleon"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Political Intrigue and Personal Ambition",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "66",
+    "input_text": "Lord Glenarvan met him briefly at a London Royal Geographical Society dinner, was struck by his encyclopaedic knowledge of mountains and seas and hired him at once as guide for the South-American interior.",
+    "claims": {
+      "events": [
+        {
+          "description": "Lord Glenarvan met him briefly at a London Royal Geographical Society dinner",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "Lord Glenarvan hired him as guide for the South-American interior",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "encyclopaedic knowledge of mountains and seas",
+          "time_scope": "stable"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "encyclopaedic knowledge of mountains and seas is desirable for a guide"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "89",
+    "input_text": "**Turning Point**: Arguing for procedural justice at Louis XVI’s trial (1793) he was driven from the inner circle, an experience that later anchored his insistence on legal formalism.",
+    "claims": {
+      "events": [
+        {
+          "description": "Arguing for procedural justice at Louis XVI’s trial",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "Being driven from the inner circle",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "insistence on legal formalism",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "Being driven from the inner circle is a negative experience"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Political Awakening in Youth",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "34",
+    "input_text": "He found ship’s papers that mentioned an illicit Australian land deal by a British peer and planned to trade the information for a pardon.",
+    "claims": {
+      "events": [
+        {
+          "description": "found ship's papers that mentioned an illicit Australian land deal by a British peer",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "planned to trade the information for a pardon",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "99",
+    "input_text": "Born into a Parisian legal family, he absorbed his father’s staunch republicanism and his mother’s gentler sensibility, learning to balance reason with feeling.",
+    "claims": {
+      "events": [
+        {
+          "description": "born into a Parisian legal family",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "absorbed his father's staunch republicanism",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "absorbed his mother's gentler sensibility",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "learned to balance reason with feeling",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "republicanism",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "gentler sensibility",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "ability to balance reason with feeling",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "absorbing his father's republicanism and his mother's gentler sensibility is a positive or desirable trait",
+        "balancing reason with feeling is a positive or desirable trait"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Early Life and Political Awakening",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "123",
+    "input_text": "In Rome he and Noirtier de Villefort studied Napoleon’s secret letters together, then quarrelled over whether to publish their contents.",
+    "claims": {
+      "events": [
+        {
+          "description": "studied Napoleon’s secret letters",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "quarrelled over whether to publish the contents of Napoleon’s secret letters",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "Foreshadowing of Relationships",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "116",
+    "input_text": "In Lisbon he backed constitutionalist Prince Pedro, was branded a Jacobin plotter out to poison King John VI and fled conservatives’ pursuit.",
+    "claims": {
+      "events": [
+        {
+          "description": "backed constitutionalist Prince Pedro",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "branded a Jacobin plotter",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "fled conservatives’ pursuit",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "being branded a Jacobin plotter is negative",
+        "fleeing conservatives’ pursuit implies they were in danger"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Origin of Political Intrigue",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "43",
+    "input_text": "Suspected of colluding with the enemy, he panicked, slipped away in a lifeboat under darkness and fled to the Southern Hemisphere.",
+    "claims": {
+      "events": [
+        {
+          "description": "suspected of colluding with the enemy",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "panicked",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "slipped away in a lifeboat under darkness",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "fled to the Southern Hemisphere",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [
+        {
+          "cause": "suspected of colluding with the enemy",
+          "effect": "panicked",
+          "confidence": "explicit"
+        },
+        {
+          "cause": "panicked",
+          "effect": "slipped away in a lifeboat under darkness",
+          "confidence": "explicit"
+        },
+        {
+          "cause": "slipped away in a lifeboat under darkness",
+          "effect": "fled to the Southern Hemisphere",
+          "confidence": "explicit"
+        }
+      ],
+      "assumptions": [
+        "being suspected of colluding with the enemy is bad",
+        "panicking is an unusual reaction",
+        "slipping away in a lifeboat under darkness is an unusual action"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "108",
+    "input_text": "He married a gentle apolitical woman, hoping domestic peace would replace political strife, and pinned on his son Villefort the hope that the boy would carry his ideals forward.",
+    "claims": {
+      "events": [
+        {
+          "description": "married a gentle apolitical woman",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "hoped domestic peace would replace political strife",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "hoped his son Villefort would carry his ideals forward",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "gentle",
+          "time_scope": "stable"
+        },
+        {
+          "trait": "apolitical",
+          "time_scope": "stable"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "domestic peace is desirable",
+        "political strife is undesirable"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "The Complexity of Family and Personal Life",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "128",
+    "input_text": "His invisible-ink formula came from temple-mural restoration in India, first used to rescue local epics the colonists had defaced.",
+    "claims": {
+      "events": [
+        {
+          "description": "temple-mural restoration in India",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "colonists defaced local epics",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "used invisible-ink formula to rescue local epics",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the colonists' actions were negative",
+        "rescuing local epics was a positive action"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Origin of the Key Artifact",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "29",
+    "input_text": "The night before the mate was hanged he pressed a dagger engraved with his family crest into the boy’s hand.",
+    "claims": {
+      "events": [
+        {
+          "description": "the mate pressed a dagger engraved with his family crest into the boy's hand",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "the mate was hanged",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "69",
+    "input_text": "At seventeen he was poisoned by an uncle during a succession struggle; manuka-bark saved him and left his nature darker. To obtain powder against the colonists he led thirty warriors against the French merchantman Amethyst, seized flint-lock muskets and picked up basic French, then discovered the captain selling Maori slaves and sacrificed every prisoner to the volcano-god.",
+    "claims": {
+      "events": [
+        {
+          "description": "poisoned by an uncle during a succession struggle",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "manuka-bark saved him",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "led thirty warriors against the French merchantman Amethyst",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "seized flint-lock muskets",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "picked up basic French",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "discovered the captain selling Maori slaves",
+          "time_scope": "adolescence"
+        },
+        {
+          "description": "sacrificed every prisoner to the volcano-god",
+          "time_scope": "adolescence"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "darker nature",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "being 'saved' implies a positive outcome",
+        "a 'darker nature' is a negative trait"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "50",
+    "input_text": "He saved an old shepherd bitten by a viper; in gratitude the man gave him a secret map of pampas water-holes and taught him that a guide’s duty is to keep life moving.",
+    "claims": {
+      "events": [
+        {
+          "description": "saved an old shepherd bitten by a viper",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "received a secret map of pampas water-holes from the old shepherd",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "was taught that a guide’s duty is to keep life moving",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the old shepherd was grateful",
+        "the old shepherd had the ability to give a secret map and teach"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "5",
+    "input_text": "During an Algerian geological survey he shielded a box of specimens in a sand-storm, was struck on the head and afterwards often mixed up dates and directions.",
+    "claims": {
+      "events": [
+        {
+          "description": "shielded a box of specimens in a sand-storm",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "was struck on the head",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "often mixed up dates and directions",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "39",
+    "input_text": "After discharge he adopted the alias Ben Joyce and shipped on the Liverpool–Lisbon trader, forming a mentor-friend bond with Captain Dewey and second mate Eddie.",
+    "claims": {
+      "events": [
+        {
+          "description": "adopted the alias Ben Joyce",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "shipped on the Liverpool–Lisbon trader",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "formed a mentor-friend bond with Captain Dewey and second mate Eddie",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "19",
+    "input_text": "Because he spoke both French and English he was posted to a Mediterranean merchant fleet where he learned basic seamanship and celestial navigation.",
+    "claims": {
+      "events": [
+        {
+          "description": "posted to a Mediterranean merchant fleet",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "learned basic seamanship and celestial navigation",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "speaks French and English",
+          "time_scope": "stable"
+        }
+      ],
+      "causal_links": [
+        {
+          "cause": "speaking both French and English",
+          "effect": "being posted to a Mediterranean merchant fleet",
+          "confidence": "explicit"
+        }
+      ],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "113",
+    "input_text": "Born in Parma to a theological family—his father studied ancient manuscripts, his mother wrote poetry in several tongues.",
+    "claims": {
+      "events": [
+        {
+          "description": "born in Parma",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "father studied ancient manuscripts",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "mother wrote poetry in several tongues",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "Early Academic Background",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "139",
+    "input_text": "Enlightenment ideals of liberty, equality and fraternity sustained him, turning even the dungeon into a classroom for hope.",
+    "claims": {
+      "events": [
+        {
+          "description": "being in a dungeon",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "experiencing enlightenment ideals of liberty, equality and fraternity",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "enlightenment ideals are positive",
+        "dungeon is a negative environment",
+        "hope is a desirable outcome"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "Addendum to Character Relationships",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "71",
+    "input_text": "During the north-island war he let troops burn an empty village, lured them into a swamp and battered them with captured European cannon; the victory won him the name “Bone-Eater,” but shrapnel crippled his left leg and he thereafter leaned on a peach-wood staff carved with sea-monster totems.",
+    "claims": {
+      "events": [
+        {
+          "description": "let troops burn an empty village",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "lured troops into a swamp",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "battered troops with captured European cannon",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "won the name 'Bone-Eater'",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "shrapnel crippled his left leg",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "uses a peach-wood staff",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "has a crippled left leg",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "being named 'Bone-Eater' is a significant or notable event",
+        "using a peach-wood staff is noteworthy"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "26",
+    "input_text": "Born in Liverpool’s slums to an alcoholic sailor father and a mother who died of tuberculosis while he was young, he watched his father be transported for smuggling and then endured an orphanage where nuns pilfered relief supplies, teaching him to despise authority.",
+    "claims": {
+      "events": [
+        {
+          "description": "born in Liverpool's slums",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "mother died of tuberculosis",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "father was transported for smuggling",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "endured an orphanage",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "nuns pilfered relief supplies at the orphanage",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "despises authority",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "alcoholic sailor father is a negative circumstance",
+        "mother dying of tuberculosis is a negative circumstance",
+        "being transported for smuggling is a negative circumstance",
+        "nuns pilfering relief supplies is a negative action"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "117",
+    "input_text": "While escaping he hid lifetime research manuscripts in a Madeira monastery cellar—the eventual clue to Monte Cristo’s treasure.",
+    "claims": {
+      "events": [
+        {
+          "description": "hid lifetime research manuscripts in a Madeira monastery cellar",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "escape",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [
+        {
+          "cause": "hid lifetime research manuscripts in a Madeira monastery cellar",
+          "effect": "eventual clue to Monte Cristo’s treasure",
+          "confidence": "explicit"
+        }
+      ],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Origin of Political Intrigue",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "6",
+    "input_text": "In a Marseille waterfront bar he met young Captain Grant; a fierce argument over Magellan Strait tides almost came to blows, but ended in mutual respect and an exchange of pocket-watches.",
+    "claims": {
+      "events": [
+        {
+          "description": "met young Captain Grant",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "fierce argument over Magellan Strait tides",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "exchange of pocket-watches",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "mutual respect is a positive outcome",
+        "exchanging pocket-watches is a sign of respect"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "76",
+    "input_text": "He carried a European pocket-watch taken from the French mate, its inner lid holding a lock of Julia’s hair, which explained both his grasp of mechanical time and his disgust for Christian objects.",
+    "claims": {
+      "events": [
+        {
+          "description": "carried a European pocket-watch taken from the French mate",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "acquired a lock of Julia’s hair",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "grasp of mechanical time",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "disgust for Christian objects",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "the pocket-watch is a Christian object",
+        "the lock of Julia's hair has significance"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "17",
+    "input_text": "His father died early; his mother remarried a French officer, so the boy grew up fluent in English and French, later adding Spanish from an English tutor.",
+    "claims": {
+      "events": [
+        {
+          "description": "father died",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "mother remarried a French officer",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "grew up fluent in English and French",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "added Spanish from an English tutor",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "fluent in English",
+          "time_scope": "stable"
+        },
+        {
+          "trait": "fluent in French",
+          "time_scope": "stable"
+        },
+        {
+          "trait": "fluent in Spanish",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "growing up with a French stepfather leads to fluency in French",
+        "having an English tutor leads to fluency in Spanish"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "20",
+    "input_text": "After a failed attempt to save a drowning comrade he was injured; the naval commander’s praise when he recovered left him with a strong sense of duty toward rescue.",
+    "claims": {
+      "events": [
+        {
+          "description": "failed attempt to save a drowning comrade",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "injured",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "recovered",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "received praise from naval commander",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "strong sense of duty toward rescue",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "receiving praise is a positive experience",
+        "a strong sense of duty is a desirable trait"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "10",
+    "input_text": "While recording thirty-two dialects along the Murray River he was expelled by British colonists; after his notes were burned he vowed to “measure every hidden truth with my own feet.”",
+    "claims": {
+      "events": [
+        {
+          "description": "expelled by British colonists",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "recording thirty-two dialects along the Murray River",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "notes were burned",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "vowed to measure every hidden truth with my own feet",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "being expelled is negative",
+        "burning notes is a significant loss"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "122",
+    "input_text": "At a Vienna-congress salon he briefly watched young prosecutor Villefort tamper with evidence against an Italian revolutionary.",
+    "claims": {
+      "events": [
+        {
+          "description": "watched young prosecutor Villefort tamper with evidence against an Italian revolutionary",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "Villefort tampered with evidence against an Italian revolutionary",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "Foreshadowing of Relationships",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "62",
+    "input_text": "Loss turned him taciturn, acting more than speaking; he felt deep pity for sufferers and stayed calmly watchful toward oppressors.",
+    "claims": {
+      "events": [
+        {
+          "description": "Loss",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "taciturn",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "feeling deep pity for sufferers",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "staying calmly watchful toward oppressors",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "being taciturn is undesirable or noteworthy",
+        "feeling deep pity for sufferers is a notable trait",
+        "staying calmly watchful toward oppressors is a notable trait"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "36",
+    "input_text": "Ritual disguise: the Bible-quoting habit he had picked up as a mission pupil became a mask for his emotions.",
+    "claims": {
+      "events": [
+        {
+          "description": "picked up Bible-quoting habit as a mission pupil",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "Bible-quoting habit",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "having a Bible-quoting habit can be a mask for emotions"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "73",
+    "input_text": "Finding missionaries wrapping opium in Bible pages, he ordered every book burned except the sheepskin map showing ancestral migration routes.",
+    "claims": {
+      "events": [
+        {
+          "description": "Finding missionaries wrapping opium in Bible pages",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "He ordered every book burned except the sheepskin map showing ancestral migration routes",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Kai-Koumou",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "98",
+    "input_text": "Hidden Waterloo-era diplomatic letters in his study ensured that political foes dared not silence him, explaining how he could still shield Valentine after losing the power of speech.",
+    "claims": {
+      "events": [
+        {
+          "description": "losing the power of speech",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "having Hidden Waterloo-era diplomatic letters in his study",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "shielding Valentine",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "having Hidden Waterloo-era diplomatic letters is significant",
+        "political foes wanting to silence him is a threat"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Resolution of Original Issues",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "25",
+    "input_text": "On the eve of sailing aboard Duncan he met ex-General von Wallace and obtained notes on South-American inland geography and native customs.",
+    "claims": {
+      "events": [
+        {
+          "description": "met ex-General von Wallace",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "obtained notes on South-American inland geography and native customs",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "sailing aboard Duncan",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "120",
+    "input_text": "He invented a “salt-blood” ink that revealed under heat, used it to help a Corsican patriot escape, and was transferred to the more secure Château d’If for the trouble.",
+    "claims": {
+      "events": [
+        {
+          "description": "invented a \"salt-blood\" ink that revealed under heat",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "helped a Corsican patriot escape",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "was transferred to the Château d’If",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the transfer to the Château d’If was a negative consequence"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "Life in Captivity Before Château d'If",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "105",
+    "input_text": "He became head of a clandestine anti-Bonaparte society, organising underground actions to sap the Emperor’s support.",
+    "claims": {
+      "events": [
+        {
+          "description": "became head of a clandestine anti-Bonaparte society",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "organising underground actions to sap the Emperor’s support",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Political Intrigue and Personal Ambition",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "57",
+    "input_text": "Early trauma: at seven his father vanished in a local uprising, at nine his mother died of illness; a banished Jesuit, Father Leclere, raised him in a mountain mission.",
+    "claims": {
+      "events": [
+        {
+          "description": "father vanished in a local uprising",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "mother died of illness",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "raised by Father Leclere in a mountain mission",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "vanishing in an uprising is traumatic",
+        "dying of illness is a negative event"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "106",
+    "input_text": "At a society meeting he met Fernand; though on opposite sides they used each other—Noirtier exploiting Fernand’s military information.",
+    "claims": {
+      "events": [
+        {
+          "description": "met Fernand at a society meeting",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "used each other",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Noirtier exploiting Fernand’s military information",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "being on opposite sides implies conflict or opposition",
+        "using each other implies mutual benefit or exploitation"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Political Intrigue and Personal Ambition",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "118",
+    "input_text": "French gendarmes seized him at Toulon, accusing him of planning to bomb Bourbon restoration festivities; the real motive was that his code-breaking threatened a cardinal’s secret correspondence.",
+    "claims": {
+      "events": [
+        {
+          "description": "French gendarmes seized him at Toulon",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "accusing him of planning to bomb Bourbon restoration festivities",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "his code-breaking threatened a cardinal’s secret correspondence",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "the accusation of planning to bomb Bourbon restoration festivities was not the real motive"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Origin of Political Intrigue",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "126",
+    "input_text": "His sister was burned as a witch for spurning a nobleman; the injustice fed a lifelong hatred of institutional rot.",
+    "claims": {
+      "events": [
+        {
+          "description": "sister was burned as a witch",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "sister spurned a nobleman",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "injustice occurred",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "hatred of institutional rot",
+          "time_scope": "stable"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "burning as a witch is an injustice",
+        "spurning a nobleman is a valid reason for being burned as a witch is not a valid assumption in this context"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Formation of Spiritual Traits",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "4",
+    "input_text": "Sitting in on lectures uninvited, he was thrown out after shouting “The secret is on the 37th southern parallel!” while the professor explained Earth’s equatorial bulge.",
+    "claims": {
+      "events": [
+        {
+          "description": "Sitting in on lectures uninvited",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Shouting \"The secret is on the 37th southern parallel!\"",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Thrown out",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "Professor explained Earth’s equatorial bulge",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "125",
+    "input_text": "In India he watched British troops crush a rising; to spare the rebel leader further torture he gave the man a merciful death, shaping his ethic of “killing when kindness demands it.”",
+    "claims": {
+      "events": [
+        {
+          "description": "watched British troops crush a rising",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "gave the rebel leader a merciful death",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "ethic of killing when kindness demands it",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "killing can be an act of kindness",
+        "torture is worse than death"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Formation of Spiritual Traits",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "40",
+    "input_text": "Skilled in shipboard medicine, he secretly stitched soldiers’ wounds yet distrusted shipmates, keeping a mental log and cultivating a “save-yourself-first” instinct.",
+    "claims": {
+      "events": [
+        {
+          "description": "practiced shipboard medicine",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "stitched soldiers' wounds in secret",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "kept a mental log",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "distrust of shipmates",
+          "time_scope": "stable"
+        },
+        {
+          "trait": "save-yourself-first instinct",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "being skilled in shipboard medicine is desirable or useful",
+        "stitching soldiers' wounds in secret is unusual or noteworthy",
+        "keeping a mental log is significant or relevant"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "96",
+    "input_text": "When he saw that Valentine had inherited his trembling hands he began training her to communicate by eye movement (1819); after his own paralysis the method evolved into a blink-code.",
+    "claims": {
+      "events": [
+        {
+          "description": "saw Valentine had inherited his trembling hands",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "began training Valentine to communicate by eye movement",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "his own paralysis",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "the method evolved into a blink-code",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Completing Character Relationships",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "45",
+    "input_text": "Watching natives slaughtered in a raid re-awakened his conscience: he cached weapons, torched the trader and raised a stone marker beside the blaze to record his regret and repentance.",
+    "claims": {
+      "events": [
+        {
+          "description": "watching natives slaughtered in a raid",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "caching weapons",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "torching the trader",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "raising a stone marker",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "re-awakening of conscience implies prior dormancy",
+        "regret and repentance imply past wrongdoing or guilt"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "54",
+    "input_text": "He briefly loved Chilean doctor Mariana, who wanted him to settle down but was refused; she died nursing cholera-stricken Indians. When he burned her belongings he kept the brass compass she had given him.",
+    "claims": {
+      "events": [
+        {
+          "description": "loved Mariana",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "Mariana wanted him to settle down",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "he refused to settle down",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "Mariana died nursing cholera-stricken Indians",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "he burned Mariana's belongings",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "refusing to settle down is undesirable",
+        "burning belongings is a significant action",
+        "keeping the brass compass is meaningful"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "8",
+    "input_text": "While being helped by a native tribe he won their trust by sketching star-maps and in return learned tracking techniques and herbal lore.",
+    "claims": {
+      "events": [
+        {
+          "description": "being helped by a native tribe",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "won their trust by sketching star-maps",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "learned tracking techniques",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "learned herbal lore",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "32",
+    "input_text": "During clashes between tribe and settlers he steered both sides toward mutual ruin, then welded the survivors into an underground intelligence web that straddled the two worlds.",
+    "claims": {
+      "events": [
+        {
+          "description": "clashes between tribe and settlers",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "steering both sides toward mutual ruin",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "welding survivors into an underground intelligence web",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "mutual ruin is undesirable",
+        "survivors would not have formed an underground intelligence web without being welded together"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "14",
+    "input_text": "Mutual recognition with Major McNabbs: both had lived among the Charrúa and confirmed their identities by exchanging certain hand signs.",
+    "claims": {
+      "events": [
+        {
+          "description": "lived among the Charrúa",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "exchanged certain hand signs with Major McNabbs",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "confirmed identities with Major McNabbs",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "63",
+    "input_text": "With the rescue squad he learned enough nautical English to converse with Captain Horace and the sailors.",
+    "claims": {
+      "events": [
+        {
+          "description": "learned nautical English with the rescue squad",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "conversed with Captain Horace and the sailors",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "41",
+    "input_text": "In Lisbon he unwittingly helped a black-marketeer dodge duty, was introduced to Duncan’s smuggling ring and, using his sea-craft, slipped past patrols several times; guilt nibbled at him yet profit lured him deeper.",
+    "claims": {
+      "events": [
+        {
+          "description": "helped a black-marketeer dodge duty",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "was introduced to Duncan’s smuggling ring",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "slipped past patrols several times",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "felt guilt",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "helping a black-marketeer is wrong",
+        "feeling guilt implies a moral compass",
+        "profit is a lure"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Tom Ayrton/Ben Joyce",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "23",
+    "input_text": "After his mother died she entrusted him with the care of his toddler half-brother; the child was later taken to Europe by the French stepfather and never heard from again, leaving Paganel with a lifelong dread of “separation by life and death.”",
+    "claims": {
+      "events": [
+        {
+          "description": "mother died",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "entrusted with care of toddler half-brother",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "toddler half-brother taken to Europe by French stepfather",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "lost contact with toddler half-brother",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "“separation by life and death” is inherently negative or undesirable"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Jacques Paganel",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "90",
+    "input_text": "To obtain royalist intelligence from the Vendée he married Éloïse, daughter of a ruined local noble (1800); when he learned she secretly backed the Chouans he arranged her “accidental” drowning (1802).",
+    "claims": {
+      "events": [
+        {
+          "description": "married Éloïse",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "learned Éloïse secretly backed the Chouans",
+          "time_scope": "adulthood"
+        },
+        {
+          "description": "arranged Éloïse's “accidental” drowning",
+          "time_scope": "adulthood"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "Éloïse's backing of the Chouans was a secret",
+        "the drowning was accidental"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "A Double Life in the Napoleonic Era",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "100",
+    "input_text": "Growing up in Paris he devoured Voltaire and Rousseau, burning with enthusiasm for liberty and equality.",
+    "claims": {
+      "events": [
+        {
+          "description": "grew up in Paris",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "read Voltaire and Rousseau",
+          "time_scope": "childhood"
+        },
+        {
+          "description": "felt enthusiasm for liberty and equality",
+          "time_scope": "childhood"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "enthusiasm for liberty and equality",
+          "time_scope": "acquired"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "reading Voltaire and Rousseau is associated with enthusiasm for liberty and equality",
+        "growing up in Paris is relevant to reading Voltaire and Rousseau"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Noirtier",
+      "original_header": "Early Life and Political Awakening",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "138",
+    "input_text": "Long political warfare severed him from his family; the once-noble house declined and could offer no help.",
+    "claims": {
+      "events": [
+        {
+          "description": "Long political warfare severed him from his family",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "The once-noble house declined",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "The house could offer no help",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": [
+        "A noble house is typically able to offer help",
+        "Decline of a noble house is undesirable"
+      ]
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "Addendum to Character Relationships",
+      "label": "consistent"
+    },
+    "status": "success"
+  },
+  {
+    "id": "130",
+    "input_text": "What seemed an epileptic fit was in fact sudden death from years of drinking prison water laced with lead.",
+    "claims": {
+      "events": [
+        {
+          "description": "drinking prison water laced with lead for years",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "sudden death",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [],
+      "causal_links": [],
+      "assumptions": []
+    },
+    "metadata": {
+      "book_name": "The Count of Monte Cristo",
+      "character": "Faria",
+      "original_header": "The Answer to a Lingering Question",
+      "label": "contradict"
+    },
+    "status": "success"
+  },
+  {
+    "id": "48",
+    "input_text": "Passing as a half-caste gaucho he worked on a ranch, picked up Spanish and the settlers’ rules, yet guarded his tribe’s herb lore and nature beliefs.",
+    "claims": {
+      "events": [
+        {
+          "description": "worked on a ranch",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "picked up Spanish",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "picked up the settlers’ rules",
+          "time_scope": "unspecified"
+        },
+        {
+          "description": "guarded his tribe’s herb lore and nature beliefs",
+          "time_scope": "unspecified"
+        }
+      ],
+      "traits": [
+        {
+          "trait": "knowledge of Spanish",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "knowledge of the settlers’ rules",
+          "time_scope": "acquired"
+        },
+        {
+          "trait": "knowledge of his tribe’s herb lore and nature beliefs",
+          "time_scope": "stable"
+        }
+      ],
+      "causal_links": [],
+      "assumptions": [
+        "being a half-caste gaucho is a valid or useful disguise",
+        "the settlers’ rules and the tribe’s herb lore and nature beliefs are distinct and potentially conflicting"
+      ]
+    },
+    "metadata": {
+      "book_name": "In Search of the Castaways",
+      "character": "Thalcave",
+      "original_header": "",
+      "label": "consistent"
+    },
+    "status": "success"
+  }
+]
