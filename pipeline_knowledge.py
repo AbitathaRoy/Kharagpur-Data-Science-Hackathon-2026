@@ -6,7 +6,7 @@ from extraction.constraint_miner import mine_constraints_from_chunk
 
 # --- CONFIGURATION ---
 DATA_DIR = "./data/novels/"
-OUTPUT_FILE = "./data/world_constraints.jsonl"
+OUTPUT_FILE = "data/world_constraints.jsonl"
 
 # --- HELPER: CHUNKING UDF ---
 def split_into_chunks(text: str, chunk_size: int = 1500, overlap: int = 200) -> list[str]:
@@ -40,10 +40,14 @@ def run_pipeline():
         with_metadata=True
     )
 
+    # --- ADD THIS DEBUG LINE ---
+    print("DEBUG: Available columns:", files.schema)
+    # ---------------------------
+
     # 2. Chunking: Split the 'data' (full text) into chunks
-    # We use 'flat_map' to turn 1 row (novel) into N rows (chunks)
+    # FIXED: Access 'path' from within the '_metadata' column
     chunks = files.select(
-        book_name=pw.this.path, # Metadata: filename
+        book_name=pw.this._metadata["path"],
         chunk_text=pw.apply(split_into_chunks, pw.this.data)
     ).flatten(pw.this.chunk_text)
 
@@ -76,8 +80,9 @@ def run_pipeline():
         character=pw.this.character,
         constraint_type=pw.this.constraint_type,
         constraint_text=pw.this.constraint_text,
-        time_scope=pw.reducers.first(pw.this.time_scope),    # Keep the first time_scope found
-        source_excerpt=pw.reducers.first(pw.this.source_excerpt) # Keep the first proof found
+        # Use max() to deterministically pick one value for the non-grouped columns
+        time_scope=pw.reducers.max(pw.this.time_scope),
+        source_excerpt=pw.reducers.max(pw.this.source_excerpt)
     )
 
     # 6. Output: Write to JSONL

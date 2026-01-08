@@ -16,6 +16,10 @@ def get_client(provider="groq"):
     else:
         return OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+# model: "llama-3.3-70b-versatile"
+# model: "qwen/qwen3-32b"
+# model: "meta-llama/llama-4-scout-17b-16e-instruct"
+# model: "gemma2-9b-it"
 def call_llm(prompt: str, provider: str = "groq", model: str = "llama-3.3-70b-versatile") -> str:
     """
     Unified caller. 

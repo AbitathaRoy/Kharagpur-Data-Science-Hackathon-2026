@@ -1,9 +1,9 @@
 # extraction/constraint_miner.py
 
 import json
+import re  # <--- NEW: For regex cleaning
 from utils.llm_client import call_llm
 
-# --- THE EXACT PROMPT FROM CHATGPT ---
 CONSTRAINT_PROMPT_TEMPLATE = """
 You are analyzing a passage from a novel.
 
@@ -27,21 +27,25 @@ DO NOT use real-world knowledge.
 DO NOT infer beyond the passage.
 DO NOT summarize the passage.
 
-If the passage contains NO such statements, return an empty list.
+If the passage contains NO such statements, return:
+{ "constraints": [] }
 
 ---
 
 OUTPUT FORMAT (STRICT JSON):
 
-[
-  {{
-    "character": "string",
-    "constraint_type": "hard_fact | temporal_lock | causal_allocation | invariant_trait",
-    "constraint_text": "plain language description of the constraint",
-    "time_scope": "childhood | adulthood | specific time | lifespan | unspecified",
-    "source_excerpt": "verbatim quote from the passage"
-  }}
-]
+{
+  "constraints": [
+    {
+      "character": "string",
+      "constraint_type": "hard_fact | temporal_lock | causal_allocation | invariant_trait",
+      "constraint_text": "plain language description of the constraint",
+      "time_scope": "childhood | adulthood | specific time | lifespan | unspecified",
+      "source_excerpt": "verbatim quote from the passage"
+    }
+  ]
+}
+
 
 ---
 
@@ -51,30 +55,59 @@ PASSAGE:
 >>>
 """
 
-def mine_constraints_from_chunk(chunk_text: str) -> list[dict]:
+def clean_json_string(raw_text: str) -> str:
     """
-    UDF (User Defined Function) for Pathway.
-    Takes a text chunk, runs the LLM, returns a list of constraint dicts.
+    Attempts to extract valid JSON from a messy LLM response.
+    Removes markdown fences (```json ... ```) and preambles.
     """
+    if not raw_text:
+        return ""
+
+    text = raw_text.strip()
+
+    # 1. Remove Markdown Code Blocks if present
+    if "```" in text:
+        # Regex to capture content inside ```json ... ``` or just ``` ... ```
+        match = re.search(r"```(?:json)?(.*?)```", text, re.DOTALL)
+        if match:
+            text = match.group(1).strip()
+
+    return text
+
+
+# extraction/constraint_miner.py
+
+def mine_constraints_from_chunk(chunk_text: str) -> list[dict] | None:
     if not chunk_text or len(chunk_text) < 50:
         return []
 
     prompt = CONSTRAINT_PROMPT_TEMPLATE.format(chunk_text=chunk_text)
-    
-    # Call your existing utility
-    response_str = call_llm(prompt) # model="gpt-4o" Or "llama-3.3-70b-versatile"
-    
+
     try:
-        # The prompt asks for a JSON list directly.
-        data = json.loads(response_str)
-        
-        # Basic validation: ensure it's a list
-        if isinstance(data, dict) and "constraints" in data:
-            return data["constraints"]
+        raw_response = call_llm(prompt)
+        cleaned_response = clean_json_string(raw_response)
+
+        if not cleaned_response:
+            return None
+
+        data = json.loads(cleaned_response)
+
+        # ✅ HARDENED SCHEMA HANDLING
         if isinstance(data, list):
             return data
-            
+
+        if isinstance(data, dict):
+            if "constraints" in data and isinstance(data["constraints"], list):
+                return data["constraints"]
+            # allow empty dict → empty constraints
+            return []
+
         return []
+
+    except json.JSONDecodeError:
+        print("⚠️ JSON Parse Error.")
+        return None
+
     except Exception as e:
-        print(f"Error parsing constraint JSON: {e}")
-        return []
+        print(f"⚠️ Miner exception: {e}")
+        return None

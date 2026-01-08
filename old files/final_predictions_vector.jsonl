@@ -1,0 +1,482 @@
+[
+  {
+    "id": 46,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to contradict the established facts."
+  },
+  {
+    "id": 137,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 74,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 109,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 104,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 35,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The facts describe distinct characters (the count, captain, Danglars) and their behaviors without conflicting information. No contradictions exist between the statements about gratitude, hospitality, or emotional repression."
+  },
+  {
+    "id": 18,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 31,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, and there are no contradictions among the established facts. The facts describe different characters (count, captain, Danglars) and their behaviors without conflicting with one another."
+  },
+  {
+    "id": 68,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, and there are no contradictions among the established facts. The facts describe different aspects of characters' behaviors and relationships without conflicting with each other."
+  },
+  {
+    "id": 9,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to evaluate against the established facts. The facts themselves do not contain contradictions among each other."
+  },
+  {
+    "id": 84,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 83,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 134,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The facts describe various character behaviors and relationships without any direct contradictions among them. The absence of a specific claim means there is no assertion to conflict with these established facts."
+  },
+  {
+    "id": 88,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 67,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 112,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The facts describe different characters' behaviors and relationships without direct contradictions. The empty claim contains no assertions to conflict with these established facts."
+  },
+  {
+    "id": 79,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 55,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, and there are no contradictions among the established facts. The facts describe different characters' behaviors and relationships without conflicting information."
+  },
+  {
+    "id": 12,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to evaluate against the established facts. The facts themselves do not contain contradictions among them."
+  },
+  {
+    "id": 13,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to compare against the established facts. The facts themselves describe distinct character behaviors and relationships without internal contradictions."
+  },
+  {
+    "id": 102,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 92,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 1,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 11,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 65,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 107,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The absence of a user claim means there is no direct contradiction to evaluate. The established facts describe character behaviors and relationships without internal inconsistencies. Since no claim is provided to conflict with these facts, the status remains consistent."
+  },
+  {
+    "id": 66,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 89,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to compare against the established facts. The facts themselves do not contradict each other as they describe different characters' behaviors and relationships without conflicting information."
+  },
+  {
+    "id": 34,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 99,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no statement to contradict the established facts. All provided facts describe different characters and their behaviors without internal contradictions."
+  },
+  {
+    "id": 123,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to compare against the established facts. The facts themselves do not contradict each other as they describe different characters' behaviors and relationships without conflicting information."
+  },
+  {
+    "id": 116,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 43,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 108,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 128,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The facts describe different characters' behaviors and relationships without conflicting information. No claim is provided to evaluate, so there is no contradiction to assess."
+  },
+  {
+    "id": 29,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 69,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The facts describe various character behaviors and relationships without any direct contradictions among them. The absence of a specific claim means there is no assertion to conflict with these established facts."
+  },
+  {
+    "id": 50,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, so there is no assertion to evaluate against the established facts. The facts themselves do not contain direct contradictions."
+  },
+  {
+    "id": 5,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 39,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The facts describe different characters (the count, captain, Danglars) and their distinct behaviors without conflicting information. No contradictions exist between the statements about gratitude, hospitality, or Danglars' demeanor."
+  },
+  {
+    "id": 19,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 113,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 139,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so no contradiction exists with the established facts."
+  },
+  {
+    "id": 71,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 26,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 117,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 6,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 76,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to compare against the established facts. The facts describe character behaviors and relationships without internal contradictions."
+  },
+  {
+    "id": 17,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 20,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 10,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, and there are no contradictions among the established facts. The facts describe different characters (count, captain, Danglars) and their behaviors without conflicting with one another."
+  },
+  {
+    "id": 122,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 62,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 36,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 73,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no statement to evaluate against the established facts. An absence of a claim cannot contradict any facts."
+  },
+  {
+    "id": 98,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to compare against the established facts. The facts themselves do not contradict each other as they describe different characters' behaviors and relationships without conflicting information."
+  },
+  {
+    "id": 25,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to evaluate against the established facts. The facts themselves do not contain contradictions among them."
+  },
+  {
+    "id": 120,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any established facts."
+  },
+  {
+    "id": 105,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 57,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, and there are no contradictions among the established facts. The facts describe various character behaviors and relationships without conflicting information."
+  },
+  {
+    "id": 106,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 118,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 126,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 4,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The absence of a user claim means there is no direct contradiction to evaluate. The established facts describe character behaviors and relationships without internal inconsistencies. Since no claim is provided to conflict with these facts, the status remains consistent by default."
+  },
+  {
+    "id": 125,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 40,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 96,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no statement to evaluate against the established facts. An absence of a claim cannot contradict any facts."
+  },
+  {
+    "id": 45,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradictions cannot exist."
+  },
+  {
+    "id": 54,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, and there are no contradictions among the established facts. The facts describe various character behaviors and relationships without conflicting statements."
+  },
+  {
+    "id": 8,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 32,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 14,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty/unrelated, so it does not contradict any of the established facts."
+  },
+  {
+    "id": 63,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user's claim is empty (USER CLAIM: \"\"), so there is no assertion to evaluate against the established facts. The facts themselves do not contain contradictions, and without a specific claim, no contradiction can be identified."
+  },
+  {
+    "id": 41,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The facts describe different characters' behaviors and relationships without direct contradictions. The empty claim lacks content to assess contradiction, so consistency is assumed."
+  },
+  {
+    "id": 23,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 90,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to compare against the established facts. The facts themselves describe distinct character behaviors and relationships without internal contradictions."
+  },
+  {
+    "id": 100,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, so there is no assertion to evaluate against the established facts. The facts themselves do not contain direct contradictions, and without a specific claim, no contradiction can be identified."
+  },
+  {
+    "id": 138,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  },
+  {
+    "id": 130,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The claim is empty, so there is no assertion to compare against the established facts. The facts themselves do not contradict each other as they describe different characters' behaviors and relationships without conflicting information."
+  },
+  {
+    "id": 48,
+    "input_text": "",
+    "verdict": "consistent",
+    "reason": "The user claim is empty, so there is no specific assertion to evaluate against the established facts. Without a claim, contradiction cannot occur."
+  }
+]
