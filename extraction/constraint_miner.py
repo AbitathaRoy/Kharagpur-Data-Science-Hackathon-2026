@@ -1,10 +1,15 @@
 # extraction/constraint_miner.py
 
 import json
-import re  # <--- NEW: For regex cleaning
+import re
 from utils.llm_client import call_llm
 
-CONSTRAINT_PROMPT_TEMPLATE = """
+def build_constraint_prompt(chunk_text):
+    """
+    Constructs the prompt using an f-string to avoid .format() collisions 
+    with JSON curly braces.
+    """
+    return f"""
 You are analyzing a passage from a novel.
 
 Your task is to extract ONLY statements that behave like
@@ -27,27 +32,22 @@ DO NOT use real-world knowledge.
 DO NOT infer beyond the passage.
 DO NOT summarize the passage.
 
-If the passage contains NO such statements, return:
-{ "constraints": [] }
+If the passage contains NO such statements, return an empty list inside the JSON.
 
 ---
 
 OUTPUT FORMAT (STRICT JSON):
-
-{
+{{
   "constraints": [
-    {
+    {{
       "character": "string",
       "constraint_type": "hard_fact | temporal_lock | causal_allocation | invariant_trait",
       "constraint_text": "plain language description of the constraint",
       "time_scope": "childhood | adulthood | specific time | lifespan | unspecified",
       "source_excerpt": "verbatim quote from the passage"
-    }
+    }}
   ]
-}
-
-
----
+}}
 
 PASSAGE:
 <<<
@@ -57,57 +57,76 @@ PASSAGE:
 
 def clean_json_string(raw_text: str) -> str:
     """
-    Attempts to extract valid JSON from a messy LLM response.
-    Removes markdown fences (```json ... ```) and preambles.
+    Aggressively extracts JSON object from messy LLM output.
     """
     if not raw_text:
         return ""
-
+        
     text = raw_text.strip()
-
-    # 1. Remove Markdown Code Blocks if present
+    
+    # Strategy 1: Look for Markdown blocks
     if "```" in text:
-        # Regex to capture content inside ```json ... ``` or just ``` ... ```
         match = re.search(r"```(?:json)?(.*?)```", text, re.DOTALL)
         if match:
             text = match.group(1).strip()
-
+            
+    # Strategy 2: Look for the outer-most curly braces {}
+    # We now expect an OBJECT, not a LIST, because of JSON mode.
+    match = re.search(r'\{.*\}', text, re.DOTALL)
+    if match:
+        return match.group(0)
+        
     return text
 
-
-# extraction/constraint_miner.py
-
-def mine_constraints_from_chunk(chunk_text: str) -> list[dict] | None:
+def mine_constraints_from_chunk(chunk_text: str) -> list[dict]:
     if not chunk_text or len(chunk_text) < 50:
         return []
 
-    prompt = CONSTRAINT_PROMPT_TEMPLATE.format(chunk_text=chunk_text)
+    # Use the function to build prompt safely
+    prompt = build_constraint_prompt(chunk_text)
 
     try:
         raw_response = call_llm(prompt)
+
+        # 1. API FAILURE
+        if raw_response is None:
+            print("❌ [MINER] API returned None (Network/Rate Limit).")
+            return None  # Triggers Retry
+
+        # 2. CLEANING
         cleaned_response = clean_json_string(raw_response)
-
+        
         if not cleaned_response:
-            return None
-
-        data = json.loads(cleaned_response)
-
-        # ✅ HARDENED SCHEMA HANDLING
-        if isinstance(data, list):
-            return data
-
-        if isinstance(data, dict):
-            if "constraints" in data and isinstance(data["constraints"], list):
-                return data["constraints"]
-            # allow empty dict → empty constraints
+            if "error" in raw_response.lower() or "sorry" in raw_response.lower():
+                 print(f"⚠️ [MINER] Model Refusal: {raw_response[:50]}...")
             return []
 
-        return []
+        # 3. PARSING
+        try:
+            data = json.loads(cleaned_response)
+            
+            # We expect {"constraints": [...]}
+            if isinstance(data, dict):
+                return data.get("constraints", [])
+                
+            # Fallback if model output a list directly
+            if isinstance(data, list):
+                return data
+                
+            return [] 
 
-    except json.JSONDecodeError:
-        print("⚠️ JSON Parse Error.")
-        return None
+        except json.JSONDecodeError:
+            # 4. FALLBACK STRATEGY (The "Dirty" Fix)
+            print(f"⚠️ [MINER] JSON Parse Failed. Saving RAW output.")
+            return [{
+                "character": "System_Fallback",
+                "constraint_type": "hard_fact",
+                "constraint_text": f"Raw Analysis (JSON Error): {cleaned_response}",
+                "time_scope": "unspecified",
+                "source_excerpt": "PARSE_FAILURE"
+            }]
 
     except Exception as e:
-        print(f"⚠️ Miner exception: {e}")
+        # 5. CATCH-ALL SAFETY NET
+        print(f"⚠️ [MINER] Unexpected Error: {e}")
         return None

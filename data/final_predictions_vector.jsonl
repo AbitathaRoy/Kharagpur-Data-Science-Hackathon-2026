@@ -1,482 +1,482 @@
 [
   {
-    "id": 46,
+    "id": "46",
     "input_text": "Thalcave\u2019s people faded as colonists advanced; his father, last of the tribal guides, knew the pampas geography and animal ways, while his mother died giving birth. Boyhood was spent roaming the plains with his father, learning to track, tame horses and steer by the stars.",
     "verdict": "consistent",
-    "reason": "Claim about Thalcave's background and skills does not directly contradict established facts."
+    "reason": "The claim addresses Thalcave's familial and cultural background, while the established facts focus on his current actions, resources, and knowledge. No direct contradiction exists between the two."
   },
   {
-    "id": 137,
+    "id": "137",
     "input_text": "Suspected again in 1815, he was re-arrested and shipped to the Ch\u00e2teau d\u2019If, this time for life.",
-    "verdict": "contradict",
-    "reason": "Edmond Dant\u00e8s has been in prison since 1815, the claim of being re-arrested in 1815 is inconsistent with established facts"
+    "verdict": "consistent",
+    "reason": "The claim aligns with the established facts about Dant\u00e8s' arrest in 1815 and imprisonment at Ch\u00e2teau d\u2019If. No explicit contradictions are present."
   },
   {
-    "id": 74,
+    "id": "74",
     "input_text": "Before each fight he studied the crack-patterns of his mother\u2019s shark-tooth necklace by moonlight to divine the outcome.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The user's claim introduces a divination method not mentioned in the established facts, which do not address shark-tooth necklaces, crack patterns, or moonlight rituals. No explicit contradiction exists."
   },
   {
-    "id": 109,
+    "id": "109",
     "input_text": "Villefort\u2019s drift toward the royalists disappointed him; father and son argued politics at every family gathering.",
-    "verdict": "contradict",
-    "reason": "Villefort's father remained fundamentally Jacobin, contradicting a drift toward the royalists"
+    "verdict": "consistent",
+    "reason": "The claim aligns with established facts about Villefort's royalist stance and potential political disagreements with his father, as their differing political allegiances (Girondin vs. royalist) could naturally lead to familial arguments. No direct contradiction exists."
   },
   {
-    "id": 104,
+    "id": "104",
     "input_text": "His parents were targeted in a reprisal for supporting the Revolution; his mother was killed, deepening his distrust of authority.",
     "verdict": "contradict",
-    "reason": "The claim implies the subject's family was targeted for supporting the Revolution, but established facts show the subject and their family were opposed to the Revolution, supporting the exiled princes and the king."
+    "reason": "The claim states the mother was killed in a reprisal, but established facts indicate she died at his birth. The father's targeting is linked to political affiliations (Girondin) and the Reign of Terror, not direct support for the Revolution."
   },
   {
-    "id": 35,
+    "id": "35",
     "input_text": "The mutiny began when Captain Grant uncovered his forged logbook and threatened to report him; \u201cmarooning\u201d was a botched silencing in which Ayrton, thinking fast, locked the captain inside the keel-less lifeboat.",
-    "verdict": "contradict",
-    "reason": "The claim mentions Captain Grant and a mutiny, but established facts do not mention these events or characters, and instead focus on Ayrton's experiences as a slave and his later life as Ben Joyce."
+    "verdict": "consistent",
+    "reason": "The claim introduces new details about the mutiny's cause and Ayrton's actions that are not addressed in the established facts. No direct contradictions exist between the claim and the provided facts."
   },
   {
-    "id": 18,
+    "id": "18",
     "input_text": "He once found bribery entries in his father\u2019s old ledgers, reported them, and saw his father\u2019s colleague dismissed; temporary gossip made him wary of the upper nobility.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim introduces a specific event (bribery entries in ledgers) not mentioned in the established facts. No direct contradiction exists between the claim and the provided facts."
   },
   {
-    "id": 31,
+    "id": "31",
     "input_text": "He rescued the indigenous elder Yurook from colonists and gained tribal protection, learning bush tracking while secretly mapping settler outposts.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and the established facts do not provide sufficient information to refute it."
+    "reason": "The claim involves human actions and tribal interactions, which are unrelated to the established facts about oxen behavior and hierarchy."
   },
   {
-    "id": 68,
+    "id": "68",
     "input_text": "At ten, migrating with his clan, a flame-shaped birth-mark on his forehead convinced elders he was the reincarnation of the \u201csun-devouring warrior.\u201d At fourteen he single-handedly brought down a European bison that had trampled plantations, fashioned his first battle-axe from its horns and carved on the handle his father\u2019s death-bed chant: \u201cgnaw the bones of enemies.\u201d",
-    "verdict": "contradict",
-    "reason": "Claim describes a non-Maori cultural context and does not match established facts about the chief's rank and promotions"
+    "verdict": "consistent",
+    "reason": "The user's claim describes a character with unique traits and actions not addressed in the established facts, which pertain to different events and individuals (e.g., Glenarvans, Cucumetto). No direct contradiction exists."
   },
   {
-    "id": 9,
+    "id": "9",
     "input_text": "He accidentally slipped a farewell letter to his French sweetheart into an academic report; the romance ended, yet the Academy of Sciences praised the document.",
-    "verdict": "contradict",
-    "reason": "The established facts mention the end of Valentine and Franz's engagement due to a discussion, but there's no mention of a farewell letter or an academic report being involved in the breakup."
+    "verdict": "consistent",
+    "reason": "The claim about an academic report being praised by the Academy aligns with the fact that the character's writing style earned him membership in the learned assembly. No direct contradiction exists with the provided facts."
   },
   {
-    "id": 84,
+    "id": "84",
     "input_text": "In a skirmish at a British outpost friendly fire killed several of his comrades; he took bones from their bodies as tokens, swore to shield the survivors and from that moment sealed his emotions.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim"
+    "reason": "The claim introduces a new scenario (skirmish, friendly fire, taking bones) not addressed in the established facts, which focus on duels, feuds, and other incidents. No direct contradiction exists."
   },
   {
-    "id": 83,
+    "id": "83",
     "input_text": "At eighteen, on the run in Tasmania, he met the escaped convict Ayrton hiding in the bush; the two fugitives pooled their languages and survival skills, raided together for ransom and forged a brotherhood laced with mutual wariness.",
-    "verdict": "contradict",
-    "reason": "The claim states Ayrton was met in Tasmania, but established facts indicate Ayrton was landed on the west coast of Australia."
+    "verdict": "consistent",
+    "reason": "The claim aligns with established facts about Ayrton's multilingualism, dangerous nature, and involvement in ransom-related activities. The mutual wariness and collaboration with a fugitive do not contradict any specific established facts."
   },
   {
-    "id": 134,
+    "id": "134",
     "input_text": "After graduation a secret society enlisted him as strategist and propagandist in a campaign against corrupt rulers.",
     "verdict": "consistent",
-    "reason": "No direct information about the user's claim is provided in the established facts to contradict it."
+    "reason": "The claim about a secret society enlisting him as a strategist and propagandist is not addressed or contradicted by any of the established facts provided."
   },
   {
-    "id": 88,
+    "id": "88",
     "input_text": "Under the alias \u201cCitizen Noirtier\u201d he joined the Girondins, drafted parts of the Revolutionary Code and broke with Robespierre over whether courts should keep formal procedures.",
-    "verdict": "contradict",
-    "reason": "Claim states he broke with Robespierre, but established facts indicate Noirtier remained fundamentally Jacobin, suggesting no break with Robespierre's ideology"
+    "verdict": "consistent",
+    "reason": "The claim aligns with established facts that Noirtier was a Girondin and had legal expertise. The specific details about drafting the Revolutionary Code and conflict with Robespierre are not explicitly contradicted by the provided facts."
   },
   {
-    "id": 67,
+    "id": "67",
     "input_text": "Born on New Zealand\u2019s North-island east coast to a Maori war-chief father and a priestess mother skilled in herbs and star-reading, he saw his father ambushed by a British musket squad, the body mutilated, the left ear taken as trophy; his mother tattooed a vengeance curse on his chest with ochre.",
     "verdict": "consistent",
-    "reason": "The claim does not directly contradict established facts, and the facts do not provide enough information to confirm or deny the claim."
+    "reason": "The User Claim introduces background details not addressed in the Established Facts. No direct contradictions exist between the described family history and the listed facts about the character's hand wound, maternal relationship, or fate."
   },
   {
-    "id": 112,
+    "id": "112",
     "input_text": "Through underground circles he met the Count of Monte Cristo and fed the avenger vital information, lending invisible aid to the plot against his enemies.",
-    "verdict": "contradict",
-    "reason": "The Count of Monte Cristo could not appear in public, making it unlikely he would meet someone in underground circles."
-  },
-  {
-    "id": 79,
-    "input_text": "After the killing, elders held a \u201cBlood-and-Bone\u201d rite; he lifted fragments of his mother\u2019s burnt bones to his lips to \u201cbreathe in her spirit,\u201d a ritual he repeated whenever catastrophe loomed, turning him gloomy yet unyielding.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim"
+    "reason": "The user's claim about meeting the Count of Monte Cristo and aiding his plot is not addressed by the established facts about Valentine's assassination or Villefort's dual role. No direct contradiction exists."
   },
   {
-    "id": 55,
-    "input_text": "His first double role: hired by a British Geographical Society expedition, he quietly altered the route to shield sacred Indian sites.",
+    "id": "79",
+    "input_text": "After the killing, elders held a \u201cBlood-and-Bone\u201d rite; he lifted fragments of his mother\u2019s burnt bones to his lips to \u201cbreathe in her spirit,\u201d a ritual he repeated whenever catastrophe loomed, turning him gloomy yet unyielding.",
     "verdict": "contradict",
-    "reason": "The claim states he was hired by a British Geographical Society expedition and altered the route to shield sacred Indian sites, but established facts indicate Paganel must give up the pleasure of seeing India, implying he does not visit India as part of his mission."
+    "reason": "The claim implies the spirit can be accessed through the bones, contradicting the fact that the soul has forever abandoned its mortal abode."
   },
   {
-    "id": 12,
+    "id": "55",
+    "input_text": "His first double role: hired by a British Geographical Society expedition, he quietly altered the route to shield sacred Indian sites.",
+    "verdict": "consistent",
+    "reason": "The claim aligns with the established facts about his role in the Geographical Society mission and does not contradict any explicitly stated facts."
+  },
+  {
+    "id": "12",
     "input_text": "He declined to take part in charting the maiden voyage of the Britannia; when news of her wreck arrived he filled three diary pages with the sentence \u201cI could have prevented it.\u201d",
     "verdict": "contradict",
-    "reason": "The claim states the Britannia was wrecked, but established facts state the Britannia left no trace of her shipwreck, implying she was lost without evidence of a wreck."
+    "reason": "The claim states the person declined to take part in the voyage, but established facts confirm they were a survivor of the Britannia's wreck, implying they were on board."
   },
   {
-    "id": 13,
+    "id": "13",
     "input_text": "His deference to Lady Glenarvan echoed the tangled feelings he had once held for his mother; by becoming the expedition\u2019s \u201cliving map\u201d he tried to atone for failing to protect her.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim"
+    "reason": "The claim references emotional motivations and familial dynamics not explicitly contradicted by the established facts. The character's past with their mother and atonement align with the fact about losing a mother at a tender age, but no direct contradiction exists."
   },
   {
-    "id": 102,
+    "id": "102",
     "input_text": "During the Revolution he acted as a militant republican, attended major assemblies and helped organise trials of royalists.",
     "verdict": "consistent",
-    "reason": "no direct evidence contradicts the claim"
+    "reason": "The user's claim about revolutionary activities does not conflict with the established fact about moral wounds, as they address different aspects (political actions vs. emotional trauma)."
   },
   {
-    "id": 92,
+    "id": "92",
     "input_text": "**Father-son Rift**: Discovering that his elder son G\u00e9rard (Villefort) sought to wed into the old aristocracy, Noirtier publicly burned the Saint-M\u00e9ran betrothal contract (1804), forcing Villefort to flee to Paris overnight.",
-    "verdict": "contradict",
-    "reason": "Villefort's father was assassinated in 1815, making it impossible for him to be alive in 1804 to burn the Saint-M\u00e9ran betrothal contract."
+    "verdict": "consistent",
+    "reason": "No constraints found (Default)."
   },
   {
-    "id": 1,
+    "id": "1",
     "input_text": "At twelve, Jacques Paganel fell in love with geography after reading Captain Cook\u2019s nautical journal; with a homemade telescope he studied the stars and papered his bedroom walls with maps he drew himself, earning his father\u2019s scolding for neglecting \u201cserious\u201d pursuits.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim about Jacques Paganel's early interest in geography."
+    "reason": "The claim does not contradict the established facts. The established facts mention Jacques' abilities, moral influence, and absence, but the claim about his childhood interests and father's scolding is not addressed in the facts provided."
   },
   {
-    "id": 11,
+    "id": "11",
     "input_text": "One night he saw first mate Ayrton secretly meet slave-traders; while shadowing them he was slashed across the left forearm with a dagger.",
-    "verdict": "contradict",
-    "reason": "No established fact mentions the Englishman shadowing Ayrton or being slashed with a dagger, and the described injuries do not match the established wounds."
-  },
-  {
-    "id": 65,
-    "input_text": "British officers marvelled that he handled canoe, coast and jungle with equal ease, shuttling supplies and so preparing his later berth on the Dartmouth.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and the established facts do not provide sufficient information to refute it."
+    "reason": "The claim introduces a new event (Ayrton meeting slave-traders and an injury to an observer) not addressed in the established facts. Glenarvan's lack of fault with Ayrton does not preclude secret actions, and no facts explicitly contradict the described injury or meeting."
   },
   {
-    "id": 107,
+    "id": "65",
+    "input_text": "British officers marvelled that he handled canoe, coast and jungle with equal ease, shuttling supplies and so preparing his later berth on the Dartmouth.",
+    "verdict": "contradict",
+    "reason": "The claim states the individual 'handled canoe... with equal ease,' but established facts show their Australian-style bark canoe capsized, nearly killing them, and required two days of failed navigation attempts."
+  },
+  {
+    "id": "107",
     "input_text": "Napoleon\u2019s triumph at Waterloo ended his hopes; in 1815 he withdrew from active plotting and turned to family affairs.",
     "verdict": "contradict",
-    "reason": "Napoleon's defeat at Waterloo in 1815 led to his exile, not triumph"
+    "reason": "The claim states Napoleon had a 'triumph at Waterloo,' but established facts indicate Waterloo marked his final defeat, leading to his overthrow. Additionally, the timeline of his son being named king of Rome (1811) and Napoleon's subsequent overthrow (1815) contradicts the claim that he 'withdrew from active plotting' in 1815, as his political downfall was already cemented by then."
   },
   {
-    "id": 66,
+    "id": "66",
     "input_text": "Lord Glenarvan met him briefly at a London Royal Geographical Society dinner, was struck by his encyclopaedic knowledge of mountains and seas and hired him at once as guide for the South-American interior.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim"
+    "reason": "The claim introduces a new event (Glenarvan hiring a guide at a Royal Geographical Society dinner) not addressed in the established facts. No contradictions exist between the claim and the provided facts."
   },
   {
-    "id": 89,
+    "id": "89",
     "input_text": "**Turning Point**: Arguing for procedural justice at Louis XVI\u2019s trial (1793) he was driven from the inner circle, an experience that later anchored his insistence on legal formalism.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim about the trial and its impact on the insistence on legal formalism."
+    "reason": "The claim references Louis XVI\u2019s 1793 trial and procedural justice, which are not addressed in the established facts. No direct contradiction exists between the claim and the provided facts."
   },
   {
-    "id": 34,
+    "id": "34",
     "input_text": "He found ship\u2019s papers that mentioned an illicit Australian land deal by a British peer and planned to trade the information for a pardon.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim"
+    "reason": "The user's claim does not contradict the established facts. The facts pertain to Harry Grant's capture, Australian behavior, water scarcity, wine prices, and Dant\u00e8s memorizing a letter. The claim about ship\u2019s papers and a pardon is unrelated to these facts and does not conflict with them."
   },
   {
-    "id": 99,
+    "id": "99",
     "input_text": "Born into a Parisian legal family, he absorbed his father\u2019s staunch republicanism and his mother\u2019s gentler sensibility, learning to balance reason with feeling.",
     "verdict": "consistent",
-    "reason": "The claim does not directly contradict established facts about Villefort's family and upbringing."
+    "reason": "The claim aligns with M. Noirtier's Jacobin republicanism and does not contradict the described maternal influence, as the mother's gentler sensibility is not explicitly addressed in the facts but also not disproven."
   },
   {
-    "id": 123,
+    "id": "123",
     "input_text": "In Rome he and Noirtier de Villefort studied Napoleon\u2019s secret letters together, then quarrelled over whether to publish their contents.",
-    "verdict": "consistent",
-    "reason": "No direct relation between the claim and established facts"
+    "verdict": "contradict",
+    "reason": "Edmond Dant\u00e8s is in strict solitary confinement and cannot be in Rome studying letters with Noirtier de Villefort."
   },
   {
-    "id": 116,
+    "id": "116",
     "input_text": "In Lisbon he backed constitutionalist Prince Pedro, was branded a Jacobin plotter out to poison King John VI and fled conservatives\u2019 pursuit.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim"
+    "reason": "The claim references events in Lisbon involving Prince Pedro and Jacobin accusations, which are not addressed in the provided established facts. No direct contradiction exists between the claim and the listed facts."
   },
   {
-    "id": 43,
+    "id": "43",
     "input_text": "Suspected of colluding with the enemy, he panicked, slipped away in a lifeboat under darkness and fled to the Southern Hemisphere.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim does not explicitly contradict any established facts. While the Duncan is described as being driven toward the Australian coast (Southern Hemisphere), the claim about fleeing via lifeboat is not directly addressed in the facts provided. The Comte de Morcerf's survival and exile are established, but no specific details about a lifeboat escape are mentioned, leaving room for consistency."
   },
   {
-    "id": 108,
+    "id": "108",
     "input_text": "He married a gentle apolitical woman, hoping domestic peace would replace political strife, and pinned on his son Villefort the hope that the boy would carry his ideals forward.",
     "verdict": "contradict",
-    "reason": "The established facts state she consistently opposed the marriage, implying she is not apolitical or gentle, contradicting the user's claim."
+    "reason": "The claim states the father married a woman, but established facts indicate his wife died at his son's birth and he was assassinated when the son was two, making a subsequent marriage impossible."
   },
   {
-    "id": 128,
+    "id": "128",
     "input_text": "His invisible-ink formula came from temple-mural restoration in India, first used to rescue local epics the colonists had defaced.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim introduces new information about an invisible-ink formula and temple-mural restoration in India, which is not addressed or contradicted by the established facts provided."
   },
   {
-    "id": 29,
+    "id": "29",
     "input_text": "The night before the mate was hanged he pressed a dagger engraved with his family crest into the boy\u2019s hand.",
     "verdict": "consistent",
-    "reason": "no direct relation to established facts"
+    "reason": "The user's claim introduces new elements (hanged mate, dagger, family crest) not mentioned in the established facts, which focus on inheritance, marriage, and character relationships. No direct contradiction exists."
   },
   {
-    "id": 69,
+    "id": "69",
     "input_text": "At seventeen he was poisoned by an uncle during a succession struggle; manuka-bark saved him and left his nature darker. To obtain powder against the colonists he led thirty warriors against the French merchantman Amethyst, seized flint-lock muskets and picked up basic French, then discovered the captain selling Maori slaves and sacrificed every prisoner to the volcano-god.",
-    "verdict": "contradict",
-    "reason": "The claim states he led thirty warriors, but established facts mention nine warriors of lower rank, not thirty."
+    "verdict": "consistent",
+    "reason": "The user's claim introduces a character with unique events (poisoning by an uncle, manuka-bark survival, leading warriors against the Amethyst, sacrificing prisoners to a volcano-god) not explicitly mentioned or contradicted by the established facts. No direct factual overlap or contradiction exists between the claim and the provided novel excerpts."
   },
   {
-    "id": 50,
+    "id": "50",
     "input_text": "He saved an old shepherd bitten by a viper; in gratitude the man gave him a secret map of pampas water-holes and taught him that a guide\u2019s duty is to keep life moving.",
-    "verdict": "contradict",
-    "reason": "Thalcave's role as guide is overridden, contradicting the claim that he was acting as a guide"
+    "verdict": "consistent",
+    "reason": "The claim introduces new narrative elements not addressed in the established facts, with no direct contradiction."
   },
   {
-    "id": 5,
+    "id": "5",
     "input_text": "During an Algerian geological survey he shielded a box of specimens in a sand-storm, was struck on the head and afterwards often mixed up dates and directions.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim involves a head injury causing confusion with dates and directions, which is not addressed in the established facts. None of the provided facts contradict this scenario."
   },
   {
-    "id": 39,
+    "id": "39",
     "input_text": "After discharge he adopted the alias Ben Joyce and shipped on the Liverpool\u2013Lisbon trader, forming a mentor-friend bond with Captain Dewey and second mate Eddie.",
-    "verdict": "contradict",
-    "reason": "The claim portrays Ben Joyce as forming a mentor-friend bond, which contradicts his established characterization as a 'bold and formidable criminal' and his actions of sabotage and harm."
+    "verdict": "consistent",
+    "reason": "The claim does not contradict established facts. Ben Joyce is confirmed as Ayrton's alias, and the other details (Liverpool\u2013Lisbon trader, relationships with Captain Dewey and Eddie) are not addressed in the provided facts."
   },
   {
-    "id": 19,
+    "id": "19",
     "input_text": "Because he spoke both French and English he was posted to a Mediterranean merchant fleet where he learned basic seamanship and celestial navigation.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim about the Mediterranean merchant fleet."
+    "reason": "The claim aligns with the established fact that Dant\u00e8s was posted to a Mediterranean merchant fleet and learned seamanship and celestial navigation, with no contradiction in details."
   },
   {
-    "id": 113,
+    "id": "113",
     "input_text": "Born in Parma to a theological family\u2014his father studied ancient manuscripts, his mother wrote poetry in several tongues.",
-    "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim about the character's birth or family background."
+    "verdict": "contradict",
+    "reason": "The claim states the character was born in Parma, while established facts confirm he was born in Auteuil. This directly contradicts the birthplace."
   },
   {
-    "id": 139,
+    "id": "139",
     "input_text": "Enlightenment ideals of liberty, equality and fraternity sustained him, turning even the dungeon into a classroom for hope.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim that Enlightenment ideals sustained him."
+    "reason": "The claim aligns with the gentleman's motivation to be useful to others and Faria's intellectual resilience in confinement, both reflecting Enlightenment ideals without contradicting any facts."
   },
   {
-    "id": 71,
+    "id": "71",
     "input_text": "During the north-island war he let troops burn an empty village, lured them into a swamp and battered them with captured European cannon; the victory won him the name \u201cBone-Eater,\u201d but shrapnel crippled his left leg and he thereafter leaned on a peach-wood staff carved with sea-monster totems.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and the established facts do not provide sufficient information to refute it."
+    "reason": "The user's claim describes events and characteristics not addressed in the established facts, with no direct contradictions."
   },
   {
-    "id": 26,
+    "id": "26",
     "input_text": "Born in Liverpool\u2019s slums to an alcoholic sailor father and a mother who died of tuberculosis while he was young, he watched his father be transported for smuggling and then endured an orphanage where nuns pilfered relief supplies, teaching him to despise authority.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The user claim describes a backstory not addressed in the established facts. The facts focus on the character's role as a father, ransom actions, and specific events like the linen and asylum, but do not contradict the Liverpool upbringing or orphanage details."
   },
   {
-    "id": 117,
+    "id": "117",
     "input_text": "While escaping he hid lifetime research manuscripts in a Madeira monastery cellar\u2014the eventual clue to Monte Cristo\u2019s treasure.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and the established facts about the priest's character and the young man's actions do not necessarily rule out the possibility of hiding research manuscripts."
+    "reason": "The claim about hiding manuscripts in a Madeira monastery cellar is unrelated to the established facts about the 150 books, Spada's breviary, or the speaker's memory. No direct contradiction exists."
   },
   {
-    "id": 6,
+    "id": "6",
     "input_text": "In a Marseille waterfront bar he met young Captain Grant; a fierce argument over Magellan Strait tides almost came to blows, but ended in mutual respect and an exchange of pocket-watches.",
     "verdict": "consistent",
-    "reason": "no direct evidence contradicts the claim"
+    "reason": "The user's claim introduces new characters and events not mentioned in the established facts, and no direct contradictions are present."
   },
   {
-    "id": 76,
+    "id": "76",
     "input_text": "He carried a European pocket-watch taken from the French mate, its inner lid holding a lock of Julia\u2019s hair, which explained both his grasp of mechanical time and his disgust for Christian objects.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim introduces a pocket-watch with a lock of Julia\u2019s hair, which is not addressed in the established facts. No direct contradiction exists with the provided information about Danglars\u2019 watch-winding habits, the count\u2019s key, or other historical references."
   },
   {
-    "id": 17,
+    "id": "17",
     "input_text": "His father died early; his mother remarried a French officer, so the boy grew up fluent in English and French, later adding Spanish from an English tutor.",
     "verdict": "contradict",
-    "reason": "The claim states he grew up fluent in English and French, and later added Spanish, but established facts state he has not left the fort since its foundation and was naturalized in Argentina, implying he did not grow up in a French environment."
+    "reason": "The user's claim states the mother remarried, but established facts confirm the mother died at the son's birth."
   },
   {
-    "id": 20,
+    "id": "20",
     "input_text": "After a failed attempt to save a drowning comrade he was injured; the naval commander\u2019s praise when he recovered left him with a strong sense of duty toward rescue.",
-    "verdict": "contradict",
-    "reason": "The claim states a comrade was saved, but established facts state none of the sailors who embarked in the boat survived."
+    "verdict": "consistent",
+    "reason": "The User Claim involves a naval commander's praise and a sense of duty toward rescue, which are not addressed in the Established Facts. No direct contradiction exists between the claim and the provided facts."
   },
   {
-    "id": 10,
+    "id": "10",
     "input_text": "While recording thirty-two dialects along the Murray River he was expelled by British colonists; after his notes were burned he vowed to \u201cmeasure every hidden truth with my own feet.\u201d",
-    "verdict": "contradict",
-    "reason": "The claim implies a personal name and experiences, but established facts state 'No. 34' has no known personal name."
+    "verdict": "consistent",
+    "reason": "The claim does not explicitly contradict any established facts. The novel's facts focus on Glenarvan's decisions, Harry Grant's capture, and colonial obstacles, but none address dialect recording, Murray River expulsions, or burned notes. No direct factual conflict exists."
   },
   {
-    "id": 122,
+    "id": "122",
     "input_text": "At a Vienna-congress salon he briefly watched young prosecutor Villefort tamper with evidence against an Italian revolutionary.",
-    "verdict": "contradict",
-    "reason": "Andrea showed no attention to Villefort's actions during the trial"
+    "verdict": "consistent",
+    "reason": "The user's claim involves Villefort's actions, which are not addressed in the established facts about Noirtier's appearance or demeanor. No direct contradiction exists."
   },
   {
-    "id": 62,
+    "id": "62",
     "input_text": "Loss turned him taciturn, acting more than speaking; he felt deep pity for sufferers and stayed calmly watchful toward oppressors.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim about loss affecting behavior"
+    "reason": "The claim describes emotional and behavioral traits (taciturn nature, pity for sufferers, calm watchfulness toward oppressors) that align with the narrator's established motivations and actions (e.g., strategic resolve, moral judgments, and calculated neutrality toward society). No explicit contradictions with the provided facts."
   },
   {
-    "id": 36,
+    "id": "36",
     "input_text": "Ritual disguise: the Bible-quoting habit he had picked up as a mission pupil became a mask for his emotions.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim about Bible-quoting as an emotional mask does not conflict with any explicitly stated facts from the novel."
   },
   {
-    "id": 73,
+    "id": "73",
     "input_text": "Finding missionaries wrapping opium in Bible pages, he ordered every book burned except the sheepskin map showing ancestral migration routes.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and established facts do not provide sufficient information to refute it."
+    "reason": "The claim introduces new elements (missionaries, opium in Bibles, sheepskin map) not addressed in the established facts. No direct contradiction with the provided facts."
   },
   {
-    "id": 98,
+    "id": "98",
     "input_text": "Hidden Waterloo-era diplomatic letters in his study ensured that political foes dared not silence him, explaining how he could still shield Valentine after losing the power of speech.",
-    "verdict": "contradict",
-    "reason": "Noirtier's inability to express himself through speech or facial expressions contradicts the claim that hidden letters could explain how he could shield Valentine"
+    "verdict": "consistent",
+    "reason": "The claim about Waterloo-era letters and protection of Valentine does not conflict with any explicitly stated facts from the novel."
   },
   {
-    "id": 25,
+    "id": "25",
     "input_text": "On the eve of sailing aboard Duncan he met ex-General von Wallace and obtained notes on South-American inland geography and native customs.",
     "verdict": "consistent",
-    "reason": "No direct contradiction with established facts"
+    "reason": "The user's claim introduces new information not addressed by the established facts, and none of the facts directly contradict the meeting with von Wallace or the acquisition of notes."
   },
   {
-    "id": 120,
+    "id": "120",
     "input_text": "He invented a \u201csalt-blood\u201d ink that revealed under heat, used it to help a Corsican patriot escape, and was transferred to the more secure Ch\u00e2teau d\u2019If for the trouble.",
-    "verdict": "contradict",
-    "reason": "The claim mentions a character inventing 'salt-blood' ink, but established facts mention 'mysterious and sympathetic ink' with no connection to a character inventing it, and no mention of helping a Corsican patriot or being transferred to Ch\u00e2teau d\u2019If."
+    "verdict": "consistent",
+    "reason": "The claim aligns with established facts about Ch\u00e2teau d\u2019If's use for political prisoners and Corsican tendencies toward revenge. The invention of 'salt-blood' ink and aiding a patriot are not contradicted by any provided facts."
   },
   {
-    "id": 105,
+    "id": "105",
     "input_text": "He became head of a clandestine anti-Bonaparte society, organising underground actions to sap the Emperor\u2019s support.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and the established facts do not necessarily preclude the existence of an anti-Bonaparte society."
+    "reason": "The claim about leading an anti-Bonaparte society is not explicitly addressed in the established facts. While characters like Villefort and the son are described as royalists, there is no direct contradiction regarding clandestine actions or leadership of such a society."
   },
   {
-    "id": 57,
+    "id": "57",
     "input_text": "Early trauma: at seven his father vanished in a local uprising, at nine his mother died of illness; a banished Jesuit, Father Leclere, raised him in a mountain mission.",
     "verdict": "consistent",
-    "reason": "The claim does not directly contradict established facts, as it does not mention the father's death or the mother's marital actions."
+    "reason": "The User Claim details the narrator's early trauma and upbringing, which are not addressed in the Established Facts. No contradictions exist between the claim and the provided facts."
   },
   {
-    "id": 106,
+    "id": "106",
     "input_text": "At a society meeting he met Fernand; though on opposite sides they used each other\u2014Noirtier exploiting Fernand\u2019s military information.",
     "verdict": "consistent",
-    "reason": "No direct information contradicts the claim about the meeting and exploitation."
+    "reason": "The claim introduces Noirtier exploiting Fernand\u2019s military information, which is not addressed in the established facts. No contradictions exist between the claim and the provided facts."
   },
   {
-    "id": 118,
+    "id": "118",
     "input_text": "French gendarmes seized him at Toulon, accusing him of planning to bomb Bourbon restoration festivities; the real motive was that his code-breaking threatened a cardinal\u2019s secret correspondence.",
-    "verdict": "contradict",
-    "reason": "The claim implies Dant\u00e8s was recognizable and at risk, contradicting established facts about his low risk of recognition and changed standing due to the English passport."
+    "verdict": "consistent",
+    "reason": "The claim introduces a scenario not addressed by the established facts. The facts do not mention code-breaking, cardinal's correspondence, or Bourbon restoration festivities, so no contradiction exists."
   },
   {
-    "id": 126,
+    "id": "126",
     "input_text": "His sister was burned as a witch for spurning a nobleman; the injustice fed a lifelong hatred of institutional rot.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim introduces a new narrative element (sister burned as a witch) not addressed in the established facts, which do not contradict it."
   },
   {
-    "id": 4,
+    "id": "4",
     "input_text": "Sitting in on lectures uninvited, he was thrown out after shouting \u201cThe secret is on the 37th southern parallel!\u201d while the professor explained Earth\u2019s equatorial bulge.",
-    "verdict": "contradict",
-    "reason": "Paganel's actions imply he is not with the reserve detachment and is instead attending lectures, which is not his assigned task."
+    "verdict": "consistent",
+    "reason": "The user's claim does not explicitly contradict any of the established facts. The scenario described (uninvited lecture attendance, shouting about a geographical coordinate) is not addressed in the provided facts, which focus on different character traits and events."
   },
   {
-    "id": 125,
+    "id": "125",
     "input_text": "In India he watched British troops crush a rising; to spare the rebel leader further torture he gave the man a merciful death, shaping his ethic of \u201ckilling when kindness demands it.\u201d",
-    "verdict": "contradict",
-    "reason": "The claim implies the major showed mercy by killing the rebel leader to spare him torture, but established facts state death is always preceded by prolonged torture in this culture, making the act of killing to spare torture inconsistent with cultural norms."
+    "verdict": "consistent",
+    "reason": "The claim aligns with the established fact that saving a man or sparing feelings is considered a 'simple deed of humanity' rather than a 'good action,' and there is no explicit contradiction with other facts."
   },
   {
-    "id": 40,
+    "id": "40",
     "input_text": "Skilled in shipboard medicine, he secretly stitched soldiers\u2019 wounds yet distrusted shipmates, keeping a mental log and cultivating a \u201csave-yourself-first\u201d instinct.",
     "verdict": "consistent",
-    "reason": "No direct violation of established facts"
+    "reason": "The claim describes a character's skills and instincts not addressed in the established facts, which focus on different characters and events. No direct contradiction exists."
   },
   {
-    "id": 96,
+    "id": "96",
     "input_text": "When he saw that Valentine had inherited his trembling hands he began training her to communicate by eye movement (1819); after his own paralysis the method evolved into a blink-code.",
     "verdict": "consistent",
-    "reason": "No direct information contradicts the claim about Valentine's training to communicate by eye movement or blink-code."
+    "reason": "The claim aligns with established facts about Valentine\u2019s evolving expertise in interpreting Noirtier\u2019s communication. The facts confirm her method improved over six years and involved eye fixation on a dictionary. The claim\u2019s mention of a blink-code as an evolved method post-paralysis is not explicitly contradicted, as the facts do not specify the exact mechanics of her communication system beyond eye movement and dictionary use."
   },
   {
-    "id": 45,
+    "id": "45",
     "input_text": "Watching natives slaughtered in a raid re-awakened his conscience: he cached weapons, torched the trader and raised a stone marker beside the blaze to record his regret and repentance.",
-    "verdict": "contradict",
-    "reason": "Death is the only acceptable atonement, but the claim describes actions that do not lead to death, such as caching weapons and raising a stone marker."
+    "verdict": "consistent",
+    "reason": "The user's claim involves actions (caching weapons, torching a trader, raising a stone marker) and a reawakened conscience, none of which directly contradict the established facts. The facts mention conscience providing excuses after exertion, which aligns with the claim's focus on repentance. No explicit factual violations are present."
   },
   {
-    "id": 54,
+    "id": "54",
     "input_text": "He briefly loved Chilean doctor Mariana, who wanted him to settle down but was refused; she died nursing cholera-stricken Indians. When he burned her belongings he kept the brass compass she had given him.",
-    "verdict": "contradict",
-    "reason": "The claim introduces a personal name 'Edmond' and a relationship, which contradicts the established fact that his identity is permanently fixed as 'No. 34' with no known personal name."
+    "verdict": "consistent",
+    "reason": "The claim introduces new information not addressed in the established facts, so no contradiction occurs."
   },
   {
-    "id": 8,
+    "id": "8",
     "input_text": "While being helped by a native tribe he won their trust by sketching star-maps and in return learned tracking techniques and herbal lore.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and the established facts do not provide sufficient information to refute it."
+    "reason": "The claim involves sketching star-maps and learning tracking/herbal lore from a native tribe, which is unrelated to the established facts provided. No direct contradiction exists."
   },
   {
-    "id": 32,
+    "id": "32",
     "input_text": "During clashes between tribe and settlers he steered both sides toward mutual ruin, then welded the survivors into an underground intelligence web that straddled the two worlds.",
-    "verdict": "contradict",
-    "reason": "No evidence of the character steering both sides toward mutual ruin or creating an underground intelligence web, established facts only mention conflicts and violence between islanders and settlers"
+    "verdict": "consistent",
+    "reason": "The claim introduces a narrative of mutual ruin and an underground intelligence web not explicitly addressed in the established facts, which focus on historical conflicts and character traits without contradiction."
   },
   {
-    "id": 14,
+    "id": "14",
     "input_text": "Mutual recognition with Major McNabbs: both had lived among the Charr\u00faa and confirmed their identities by exchanging certain hand signs.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim introduces new characters (Major McNabbs) and elements (Charr\u00faa, hand signs) not mentioned in the established facts, with no direct contradiction."
   },
   {
-    "id": 63,
+    "id": "63",
     "input_text": "With the rescue squad he learned enough nautical English to converse with Captain Horace and the sailors.",
-    "verdict": "contradict",
-    "reason": "The claim implies he learned nautical English, but established facts show he has sailed the Mediterranean since childhood and has expert knowledge of Mediterranean ports, suggesting prior knowledge of nautical terms, and there is no mention of him being unable to converse with sailors before."
+    "verdict": "consistent",
+    "reason": "The claim about learning nautical English through the rescue squad does not contradict the established facts, which focus on the sailor's experience and skills but do not address language acquisition methods."
   },
   {
-    "id": 41,
+    "id": "41",
     "input_text": "In Lisbon he unwittingly helped a black-marketeer dodge duty, was introduced to Duncan\u2019s smuggling ring and, using his sea-craft, slipped past patrols several times; guilt nibbled at him yet profit lured him deeper.",
-    "verdict": "contradict",
-    "reason": "The claim states he was introduced to Duncan's smuggling ring and used his sea-craft for smuggling, but established facts state his presence on the Duncan was due to his military role and relationship to the Glenarvans, not smuggling."
+    "verdict": "consistent",
+    "reason": "The user claim introduces new narrative elements (smuggling, black-market activities, Duncan\u2019s ring) not addressed in the established facts, which focus on logistical preparations, character traits, and prior events. No direct contradiction exists."
   },
   {
-    "id": 23,
+    "id": "23",
     "input_text": "After his mother died she entrusted him with the care of his toddler half-brother; the child was later taken to Europe by the French stepfather and never heard from again, leaving Paganel with a lifelong dread of \u201cseparation by life and death.\u201d",
     "verdict": "contradict",
-    "reason": "The established facts state that his separation from his son was caused by sending the son for education to a college, which contradicts the claim that the child was taken to Europe by the French stepfather and never heard from again."
+    "reason": "The claim introduces a 'half-brother' and a 'French stepfather,' but established facts state Robert is a full brother (wife died at his birth) and no stepfather is mentioned. The claim also fabricates details not present in the source material."
   },
   {
-    "id": 90,
+    "id": "90",
     "input_text": "To obtain royalist intelligence from the Vend\u00e9e he married \u00c9lo\u00efse, daughter of a ruined local noble (1800); when he learned she secretly backed the Chouans he arranged her \u201caccidental\u201d drowning (1802).",
-    "verdict": "contradict",
-    "reason": "Claim implies \u00c9lo\u00efse is deceased, but established facts refer to a countess, implying she is alive"
+    "verdict": "consistent",
+    "reason": "The claim introduces new characters and events (\u00c9lo\u00efse, her marriage, and drowning) not mentioned in the established facts about Valentine de Villefort. No direct contradiction exists between the claim and the provided facts."
   },
   {
-    "id": 100,
+    "id": "100",
     "input_text": "Growing up in Paris he devoured Voltaire and Rousseau, burning with enthusiasm for liberty and equality.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim does not explicitly contradict any established facts. The facts focus on distrust of society and lack of love, while the claim highlights enthusiasm for liberty and equality, which is not addressed in the provided sources."
   },
   {
-    "id": 138,
+    "id": "138",
     "input_text": "Long political warfare severed him from his family; the once-noble house declined and could offer no help.",
-    "verdict": "contradict",
-    "reason": "The claim states the house declined and could offer no help due to long political warfare, but established facts indicate the family maintained influence, with the Count becoming a senator and Villefort joining the new government."
-  },
-  {
-    "id": 130,
-    "input_text": "What seemed an epileptic fit was in fact sudden death from years of drinking prison water laced with lead.",
     "verdict": "consistent",
-    "reason": "No explicit constraints found."
+    "reason": "The claim aligns with the political turmoil and familial decline implied by Villefort's father's suffering during the Reign of Terror and the house's eventual sale/decline, without directly contradicting any specific fact."
   },
   {
-    "id": 48,
+    "id": "130",
+    "input_text": "What seemed an epileptic fit was in fact sudden death from years of drinking prison water laced with lead.",
+    "verdict": "contradict",
+    "reason": "The established facts indicate that gradual poison tolerance (like Mithridates') allows survival when drinking poisoned water. The claim of sudden death from years of lead exposure contradicts this, as tolerance would likely prevent fatal effects."
+  },
+  {
+    "id": "48",
     "input_text": "Passing as a half-caste gaucho he worked on a ranch, picked up Spanish and the settlers\u2019 rules, yet guarded his tribe\u2019s herb lore and nature beliefs.",
     "verdict": "consistent",
-    "reason": "No direct evidence contradicts the claim, and Thalcave's abilities as a baqueano suggest he could adapt to various roles."
+    "reason": "The claim does not contradict established facts. The character's role as a half-caste gaucho working on a ranch and preserving tribal herb lore aligns with the colony's coexistence of settlers and outsiders, while the herb lore references match the elect's described beliefs without conflict."
   }
 ]

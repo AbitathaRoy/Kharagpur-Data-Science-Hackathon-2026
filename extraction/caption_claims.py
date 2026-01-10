@@ -11,6 +11,34 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from schemas.claims import CaptionClaims, EventClaim, TraitClaim, CausalLink
 from utils.llm_client import call_llm
 
+# -------------------------
+# Caching Configuration
+# -------------------------
+CACHE_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', 'caption_claims_cache.json')
+
+def load_cache():
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            return {}
+    return {}
+
+def save_cache_entry(caption, data):
+    # Reload to ensure we don't overwrite concurrent runs (simple approach)
+    current_cache = load_cache()
+    current_cache[caption] = data
+    
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
+    
+    with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(current_cache, f, indent=2)
+
+# Load cache globally on startup
+GLOBAL_CACHE = load_cache()
+
 
 # -------------------------
 # Hard-coded guards (DO NOT REMOVE)
@@ -63,9 +91,22 @@ def extract_caption_claims(caption: str) -> CaptionClaims:
     Deterministic guards enforce logical discipline.
     """
 
-    print(f"\n--- DEBUG START: '{caption}' ---")
+    print(f"\n--- DEBUG START: '{caption[:50]}...' ---")
 
-    prompt = f"""
+    # --- CACHE CHECK ---
+    # Logic: If data exists in cache, use it. 
+    # If not, call LLM.
+    # If LLM fails, DO NOT SAVE to cache (so it retries next time).
+    
+    data = None
+    
+    if caption in GLOBAL_CACHE:
+        print("   ⚡ CACHE HIT: Using saved extraction.")
+        data = GLOBAL_CACHE[caption]
+    else:
+        print("   ⛏️  CACHE MISS: Calling LLM...")
+        
+        prompt = f"""
 You are extracting atomic claims from a hypothetical character backstory.
 
 CRITICAL CONSTRAINTS (VIOLATIONS ARE ERRORS):
@@ -113,14 +154,35 @@ JSON SCHEMA (FOLLOW EXACTLY):
 BACKSTORY CAPTION:
 "{caption}"
 """
+        
+        try:
+            llm_response = call_llm(prompt)
+            # Try parsing
+            parsed_data = json.loads(llm_response)
+            
+            # If successful, assign to data AND save to cache
+            data = parsed_data
+            save_cache_entry(caption, data)
+            # Update global variable to avoid reload lag
+            GLOBAL_CACHE[caption] = data
+            
+        except json.JSONDecodeError:
+            print("   ⚠️  ERROR: JSON Parse Failed. Will retry next run.")
+            # Set default for this run so it doesn't crash, 
+            # BUT DO NOT SAVE TO CACHE.
+            data = {"events": [], "traits": [], "causal_links": [], "assumptions": []}
+        except Exception as e:
+            print(f"   ⚠️  ERROR: API Failure ({e}). Will retry next run.")
+            data = {"events": [], "traits": [], "causal_links": [], "assumptions": []}
 
-    llm_response = call_llm(prompt)
-
-    try:
-        data = json.loads(llm_response)
-    except json.JSONDecodeError:
+    # Ensure data is not None (fallback)
+    if not data:
         data = {"events": [], "traits": [], "causal_links": [], "assumptions": []}
 
+    # ---------------------------------------------------------
+    # Processing Logic (Runs on both Cached and New data)
+    # ---------------------------------------------------------
+    
     # 2. DEBUG: Check Causality Trigger
     explicit_causality = caption_has_explicit_causality(caption)
     print(f"DEBUG: Explicit Causality Detected? -> {explicit_causality}")
@@ -197,7 +259,7 @@ BACKSTORY CAPTION:
 
 
 if __name__ == "__main__":
-    result= extract_caption_claims(
+    result = extract_caption_claims(
         "He had a difficult childhood."
         )
     print(result)

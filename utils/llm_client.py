@@ -20,7 +20,7 @@ def get_client(provider="groq"):
 # model: "qwen/qwen3-32b"
 # model: "meta-llama/llama-4-scout-17b-16e-instruct"
 # model: "gemma2-9b-it"
-def call_llm(prompt: str, provider: str = "groq", model: str = "llama-3.3-70b-versatile") -> str:
+def call_llm(prompt: str, provider: str = "groq", model: str = "qwen/qwen3-32b") -> str:
     """
     Unified caller. 
     Defaulting to Groq + Llama 3.3 (Fast, Free-ish, Smart).
