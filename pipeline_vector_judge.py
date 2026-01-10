@@ -3,48 +3,24 @@
 import json
 import os
 import time
-import hashlib
 import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-from extraction.constraint_miner import mine_constraints_from_chunk
 from utils.llm_client import call_llm
-from collections import Counter
-
 
 # --- CONFIG ---
 CHUNKS_FILE = "data/chunks.jsonl"
 CAPTION_CLAIMS_FILE = "data/claims_output.json"
 OUTPUT_FILE = "data/final_predictions_vector.jsonl"
-CACHE_FILE = "data/constraint_cache.json"
 VECTOR_STORE = "./data/vector_store.pkl"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
+# Retrieve top 20 chunks (Scoped to the specific book)
+# We go deeper because we know they are all from the right book.
+TOP_K = 20 
 
-# --- DIAGNOSTICS ---
-def diagnose_retrieval_and_mining(claim_id, hits, mined_results):
-    status = Counter()
-    for r in mined_results.values():
-        if r is None:
-            status["api_failure_none"] += 1
-        elif isinstance(r, list) and len(r) == 0:
-            status["true_empty"] += 1
-        else:
-            status["non_empty_constraints"] += 1
-
-    print("\n📊 DIAGNOSTICS FOR CLAIM:", claim_id)
-    print("   Retrieved chunks:", len(hits))
-    print("   Mining outcomes:")
-    for k, v in status.items():
-        print(f"     - {k}: {v}")
-    
-    # Print similarity scores to ensure we aren't getting garbage
-    sims = [h[0] for h in hits]
-    print(f"   Similarity scores: {sims}")
-
-
-# --- 1. VECTOR ENGINE ---
+# --- 1. SCOPED VECTOR ENGINE ---
 class VectorEngine:
     def __init__(self):
         print(f"Loading embedding model: {EMBEDDING_MODEL}...")
@@ -60,207 +36,154 @@ class VectorEngine:
                 self.chunks = data['chunks']
                 self.embeddings = data['embeddings']
         else:
-            print("Building vector index (This happens once)...")
-            # Load chunks
+            print("Building vector index...")
             with open(CHUNKS_FILE, 'r', encoding='utf-8') as f:
                 for line in f:
                     self.chunks.append(json.loads(line))
             
             texts = [c['chunk_text'] for c in self.chunks]
-            print(f"Embedding {len(texts)} chunks... (Grab a coffee, this takes ~2 mins)")
+            print(f"Embedding {len(texts)} chunks...")
             self.embeddings = self.model.encode(texts, show_progress_bar=True)
             
             with open(VECTOR_STORE, 'wb') as f:
                 pickle.dump({'chunks': self.chunks, 'embeddings': self.embeddings}, f)
                 
-    def search(self, query, top_k=2):
-        if not query or not query.strip():
-            return []
+    def search(self, query, book_filter=None, top_k=TOP_K):
+        if not query or not query.strip(): return []
+        
+        # 1. Identify indices for the target book
+        if book_filter:
+            # Normalize strings for safer matching
+            bf = book_filter.lower().strip()
+            indices = [
+                i for i, c in enumerate(self.chunks) 
+                if bf in c.get('metadata', {}).get('book_name', '').lower()
+            ]
+            
+            # Fallback: If filtering removes everything (e.g., name mismatch), search all
+            if not indices:
+                # print(f"⚠️ Warning: No chunks found for book '{book_filter}'. Searching all.")
+                indices = range(len(self.chunks))
+        else:
+            indices = range(len(self.chunks))
+            
+        # 2. Encode Query
         query_vec = self.model.encode([query])
-        sims = cosine_similarity(query_vec, self.embeddings)[0]
-        # Get top indices
-        top_indices = np.argsort(sims)[-top_k:][::-1]
+        
+        # 3. Filter Embeddings & Calculate Similarity
+        # We slice the master embeddings array to only include target book chunks
+        filtered_embeddings = self.embeddings[indices]
+        
+        if len(filtered_embeddings) == 0:
+            return []
+
+        sims = cosine_similarity(query_vec, filtered_embeddings)[0]
+        
+        # 4. Get Top K (Relative to the filtered list)
+        # Ensure we don't ask for more chunks than exist in the book
+        k = min(top_k, len(sims))
+        top_relative_indices = np.argsort(sims)[-k:][::-1]
         
         results = []
-        for idx in top_indices:
-            results.append((sims[idx], self.chunks[idx]))
+        for rel_idx in top_relative_indices:
+            original_idx = indices[rel_idx] # Map back to global ID
+            results.append((sims[rel_idx], self.chunks[original_idx]))
+            
         return results
 
-# --- 2. CACHED MINER ---
-def get_constraints_for_chunk(chunk, cache):
-    c_id = hashlib.md5(chunk['chunk_text'].encode("utf-8")).hexdigest()
-    
-    # If in cache and valid, return it
-    if c_id in cache:
-        return cache[c_id]
-    
-    # Mine
-    print(f"   ⛏️  Mining fresh chunk: {c_id[:8]}...")
-    try:
-        constraints = mine_constraints_from_chunk(chunk['chunk_text'])
-        
-        # KEY CHANGE: Only cache if NOT None.
-        # If it's [], we cache it (True Empty).
-        # If it's valid data, we cache it.
-        # If it's None (API Error), we DO NOT cache it.
-        if constraints is not None:
-            cache[c_id] = constraints
-            # Save immediately
-            with open(CACHE_FILE, 'w', encoding='utf-8') as f:
-                json.dump(cache, f, indent=2)
-        
-        return constraints
-    except Exception as e:
-        print(f"   ⚠️ Error mining chunk {c_id}: {e}")
-        return None
+# --- 2. THE DETECTIVE JUDGE ---
+def evaluate_claim_raw(claim, chunks):
+    context_text = ""
+    for i, (score, chunk) in enumerate(chunks):
+        text = chunk.get('chunk_text', '').replace("\n", " ")
+        context_text += f"[{i+1}] {text}\n\n"
 
-# --- 3. JUDGE ---
-def evaluate_consistency(claim, constraints):
-    # Filter out None results
-    valid_constraints = [c for c in constraints if c is not None]
-    
-    # Flatten list of lists if necessary
-    flat_constraints = []
-    for item in valid_constraints:
-        if isinstance(item, list):
-            flat_constraints.extend(item)
-        elif isinstance(item, dict):
-            flat_constraints.append(item)
-
-    if not flat_constraints:
-        return "consistent", "No constraints found (Default)."
-        
-    # Format evidence
-    evidence_text = ""
-    for c in flat_constraints:
-        # Handle "Raw Constraints" from our fallback logic
-        c_text = c.get('constraint_text', str(c))
-        c_source = c.get('source_excerpt', 'Unknown')
-        evidence_text += f"- {c_text} (Source: {c_source})\n"
-    
+    # We use a "Detective" persona to encourage finding the specific details
     prompt = f"""
-    You are a Continuity Editor.
+    You are a Detective verifying a witness statement against the official case files.
     
-    USER CLAIM: "{claim}"
+    WITNESS CLAIM: "{claim}"
     
-    ESTABLISHED FACTS (from the novel):
-    {evidence_text}
+    OFFICIAL CASE FILES (NOVEL TEXT):
+    {context_text}
     
-    TASK:
-    Does the User Claim CONTRADICT the Established Facts?
-    - If the claim explicitly violates a fact, answer "contradict".
-    - If the claim fits (or is not mentioned), answer "consistent".
+    INSTRUCTIONS:
+    1. Search the Case Files for the specific events/characters mentioned in the Claim.
+    2. **Compare Details:** Look closely at names, dates, causes of death, and relationships.
+    3. **Verdict Logic:**
+       - **CONTRADICT**: If the text explicitly tells a *different* story (e.g., Claim says "Shot", Text says "Stabbed").
+       - **CONTRADICT**: If the Claim says X happened, but the Text says Y happened *instead*.
+       - **CONSISTENT**: If the Claim is supported by the text.
+       - **CONSISTENT**: If the Claim adds extra details that do *not* conflict with the text (Silence is not a lie).
     
-    Return JSON: {{ "verdict": "consistent" | "contradict", "reason": "short explanation" }}
+    Return JSON: {{ "verdict": "consistent" | "contradict", "reason": "Citing specific passage [x]" }}
     """
     
     try:
-        resp = call_llm(prompt)
-        if not resp:
-             return "consistent", "LLM Judge Failed (Empty Response)"
-             
-        if "```" in resp: 
-            resp = resp.split("```")[1].replace("json", "").strip()
-            
+        resp = call_llm(prompt) 
+        if not resp: return "consistent", "LLM Error"
+        if "```" in resp: resp = resp.split("```")[1].replace("json", "").strip()
         data = json.loads(resp)
         return data.get("verdict", "consistent"), data.get("reason", "")
     except Exception as e:
-        print(f"   ⚠️ Judge Error: {e}")
         return "consistent", f"Judge Error: {e}"
 
 def flatten_atomic_claims(claims_dict):
-    """
-    Turns the structured claims (events, traits) back into a list of strings
-    for vector search queries.
-    """
-    probes = []
-    if not claims_dict: return []
-    
-    # Events
-    for e in claims_dict.get('events', []):
-        probes.append(e.get('description', ''))
-        
-    # Traits
-    for t in claims_dict.get('traits', []):
-        probes.append(f"{t.get('trait', '')} is {t.get('time_scope', '')}")
-        
-    return [p for p in probes if p]
+    if not claims_dict: return ""
+    text = ""
+    for e in claims_dict.get('events', []): text += e.get('description', '') + " "
+    return text.strip()
 
-# --- MAIN ---
-def run_vector_pipeline():
-    # Setup Engine
+# --- MAIN WITH RESUME CAPABILITY ---
+def run_pipeline():
     engine = VectorEngine()
     engine.load_or_build_index()
     
-    # Load Cache
-    if os.path.exists(CACHE_FILE):
-        with open(CACHE_FILE, 'r', encoding='utf-8') as f:
-            try:
-                cache = json.load(f)
-            except:
-                cache = {}
-    else:
-        cache = {}
-
-    # Load Claims
-    with open(CAPTION_CLAIMS_FILE, 'r', encoding='utf-8') as f:
+    with open(CAPTION_CLAIMS_FILE, 'r', encoding='utf-8') as f: 
         claims_data = json.load(f)
         
-    results = []  # <--- INITIALIZED HERE. Safe.
+    # --- RESUME LOGIC ---
+    processed_ids = set()
+    results = []
+    
+    # Check if output file exists and load existing results
+    if os.path.exists(OUTPUT_FILE):
+        print(f"🔄 Found existing output file: {OUTPUT_FILE}")
+        try:
+            with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+                results = existing_data
+                processed_ids = {item['id'] for item in existing_data}
+            print(f"   Skipping {len(processed_ids)} already processed claims.")
+        except json.JSONDecodeError:
+            print("   ⚠️ Output file corrupted or empty. Starting fresh.")
 
-    print(f"Processing {len(claims_data)} user claims with VECTOR SEARCH...")
+    print(f"Processing {len(claims_data)} claims with SCOPED RAG (Top-{TOP_K})...")
     
     for i, item in enumerate(claims_data):
         claim_id = item.get('id')
-        claim_text = (item.get('input_text') or "").strip()
         
-        if not claim_text:
-            print(f"⚠️ Empty claim id={claim_id}, skipping.")
-            results.append({
-                "id": claim_id,
-                "input_text": "",
-                "verdict": "consistent",
-                "reason": "No claim text."
-            })
+        # SKIP if already done
+        if claim_id in processed_ids:
             continue
-            
-        print(f"\n[{i+1}/{len(claims_data)}] {claim_text[:60]}...")
-        
-        # 1. Generate Search Probes
-        probes = flatten_atomic_claims(item.get('claims', {}))
-        if not probes: 
-            probes = [claim_text] # Fallback to full text
-            
-        # 2. Vector Search & Mining
-        mined_results = {} # Map chunk_hash -> constraints
-        all_constraints = []
-        
-        # Search for each probe
-        for p in probes:
-            hits = engine.search(p, top_k=2)
-            
-            for score, chunk in hits:
-                # Deduplicate by content hash
-                c_hash = hashlib.md5(chunk['chunk_text'].encode("utf-8")).hexdigest()
-                
-                if c_hash in mined_results:
-                    continue # Already mined this chunk for this claim
-                
-                constraints = get_constraints_for_chunk(chunk, cache)
-                mined_results[c_hash] = constraints
-                
-                if constraints:
-                    all_constraints.append(constraints)
 
-        # Diagnostics
-        # Pass a list of hits for diagnostics (just use the last hits from loop)
-        diagnose_retrieval_and_mining(claim_id, hits, mined_results)
+        claim_text = (item.get('input_text') or "").strip()
+        book_name = item.get('metadata', {}).get('book_name')
         
-        # 3. Judge
-        verdict, reason = evaluate_consistency(claim_text, all_constraints)
-        print(f"   ⚖️  {verdict.upper()}")
+        if not claim_text: continue
         
-        # 4. Save Result
+        print(f"\n[{i+1}/{len(claims_data)}] ID {claim_id} ({book_name})...")
+        
+        # 1. Retrieval
+        search_query = claim_text + " " + flatten_atomic_claims(item.get('claims', {}))
+        hits = engine.search(search_query, book_filter=book_name, top_k=TOP_K)
+        
+        # 2. Judgment
+        verdict, reason = evaluate_claim_raw(claim_text, hits)
+        
+        print(f"   🔍 Retrieved {len(hits)} chunks (Scoped).")
+        print(f"   ⚖️  Verdict: {verdict.upper()}")
+        
         results.append({
             "id": claim_id,
             "input_text": claim_text,
@@ -268,16 +191,11 @@ def run_vector_pipeline():
             "reason": reason
         })
         
-        # Periodic Save (Safety)
-        if i % 10 == 0:
-            with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-                json.dump(results, f, indent=2)
+        # Save every step so we don't lose progress on crash
+        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f: 
+            json.dump(results, f, indent=2)
 
-    # Final Save
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2)
-        
     print("✅ Pipeline Complete.")
 
 if __name__ == "__main__":
-    run_vector_pipeline()
+    run_pipeline()
